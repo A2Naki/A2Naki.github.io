@@ -1,0 +1,142 @@
+/* ==========================================================================
+   AION2 × XENEON EDGE — DESIGN TOKENS  ("Eterdualitet" direction, v1)
+   Never hard-code colors/fonts in a widget. Read these variables only.
+   Theme is set on <html data-theme="elyos|asmodian"> by a2-theme.js.
+   ========================================================================== */
+
+:root,
+[data-theme="elyos"] {
+  /* Surfaces */
+  --a2-base: #2b3358;                      /* solid fallback under background art */
+  --a2-veil: linear-gradient(90deg, rgba(170,195,235,.18), rgba(14,16,36,.5) 45%, rgba(18,14,40,.72));
+  --a2-surface: linear-gradient(180deg, rgba(26,34,66,.84), rgba(14,18,40,.92));
+  --a2-surface-solid: #141a36;             /* inside rings, slots */
+  --a2-slot: rgba(6,8,20,.6);
+
+  /* Frame: polished silver rim (2px) + gold filigree corners */
+  --a2-rim: linear-gradient(160deg, #f2f5fb, #8e98ae 35%, #dde3ee 60%, #6d7690);
+  --a2-hair: rgba(220,230,248,.16);        /* 1px dividers */
+  --a2-ring: rgba(207,226,251,.5);         /* decorative circles */
+
+  /* Text */
+  --a2-title: #e3ebf8;
+  --a2-text: #f5f7fc;
+  --a2-dim: #aeb8d3;                       /* >= 4.5:1 on surface */
+
+  /* Accents */
+  --a2-accent: #b9d4f2;                    /* open checkbox outline, secondary */
+  --a2-glow: #9fd8ff;                      /* aether: "soon" state, meters, glow */
+  --a2-glow-rgb: 146,203,241;
+  --a2-halo: rgba(146,203,241,.34);
+  --a2-arc: rgba(146,203,241,.5);
+
+  /* Background art */
+  --a2-art-flip: none;
+  --a2-icon-glow: drop-shadow(0 0 6px rgba(146,203,241,.85));
+}
+
+[data-theme="asmodian"] {
+  --a2-base: #1e1638;
+  --a2-veil: linear-gradient(90deg, rgba(60,36,110,.35), rgba(14,10,30,.6) 45%, rgba(10,8,22,.78));
+  --a2-surface: linear-gradient(180deg, rgba(38,26,70,.86), rgba(16,11,34,.93));
+  --a2-surface-solid: #1a1232;
+  --a2-slot: rgba(10,6,22,.6);
+
+  --a2-rim: linear-gradient(160deg, #ece3fa, #8a78b0 35%, #d3c6ec 60%, #5a4a82);
+  --a2-hair: rgba(214,196,248,.16);
+  --a2-ring: rgba(214,196,248,.5);
+
+  --a2-title: #e6dcf8;
+  --a2-text: #f7f3fd;
+  --a2-dim: #b8abd4;
+
+  --a2-accent: #c9b4f2;
+  --a2-glow: #c6a6ff;
+  --a2-glow-rgb: 190,150,255;
+  --a2-halo: rgba(170,130,250,.32);
+  --a2-arc: rgba(190,150,255,.5);
+
+  --a2-art-flip: scaleX(-1);
+  --a2-icon-glow: drop-shadow(0 0 6px rgba(190,150,255,.85));
+}
+
+:root {
+  /* Constants — identical in both themes */
+  --a2-gold: #e9c77c;                      /* ONLY: frame corners, diamonds, reset, "done" */
+  --a2-gold-text: #f0cf82;
+  --a2-gold-glow: rgba(253,205,113,.8);
+  /* HP frame metals (v1.3 "corner claw", user 2026-10-02): painted through the ornament masks (shared/img/frame-claw-*.svg) */
+  --a2-metal-gold: linear-gradient(160deg, #fff3c8 0%, #e9c77c 28%, #9a7230 52%, #f0cf82 72%, #6e4c1c 100%);
+  --a2-metal-silver: linear-gradient(160deg, #ffffff 0%, #c9d1e2 25%, #6d7690 52%, #dde3ee 72%, #4f5770 100%);
+  --a2-gold-ink: #f4ecd6;
+
+  /* Gear grade colors (verify against the game client) */
+  --a2-grade-common: #e8e8e8;
+  --a2-grade-rare: #5fd17a;
+  --a2-grade-legendary: #5b9dff;
+  --a2-grade-unique: #f3d15a;
+  --a2-grade-heroic: #f0604f;
+
+  /* Combat meters (same in both themes) */
+  --a2-dmg: var(--a2-glow);                /* damage bars use the faction glow */
+  --a2-heal: #6ff2c0;                      /* healing = cleric-sigil jade */
+  --a2-heal-rgb: 111,242,192;
+  --a2-self: var(--a2-gold);               /* your own row gets a gold edge */
+
+  /* Live state (same in both themes) */
+  --a2-hp: #e25563;                        /* party HP */
+  --a2-mp: #5b9dff;                        /* party MP */
+  --a2-boss: #d8434f;                      /* boss HP fill */
+  --a2-lag: rgba(255,255,255,.5);          /* trailing "damage taken" chunk */
+  --a2-stagger: #ffb35c;
+  --a2-stagger-rgb: 255,179,92;
+  --a2-debuff: #f0604f;
+  --a2-ok: #6ff2c0;                        /* bridge live, positive delta */
+  --a2-warn: #ffb35c;                      /* bridge waiting, near cap, expiring */
+
+  /* Typography */
+  --a2-font-title: "Cinzel", "Trajan Pro", Georgia, serif;   /* caps titles, big clock */
+  --a2-font-banner: "Marcellus SC", "Cinzel", serif;         /* optional zone-banner plates */
+  --a2-font-ui: "Jost", "Segoe UI", sans-serif;              /* all numbers + list text */
+
+  --a2-fs-display: 156px;   /* center clock (Cinzel) */
+  --a2-fs-hero: 132px;      /* center event countdown / M clock */
+  --a2-fs-num-l: 84px;      /* S widget main value (Jost 300) */
+  --a2-fs-num-m: 46px;      /* row countdowns, stats (Jost 300) */
+  --a2-fs-name: 46px;       /* character / legion name (Cinzel 600) */
+  --a2-fs-body: 28px;       /* list rows */
+  --a2-fs-title: 26px;      /* panel titles (Cinzel 600, caps, .18em) */
+  --a2-fs-label: 22px;      /* meta, labels — MINIMUM size anywhere */
+
+  --a2-track-title: .18em;
+  --a2-track-kicker: .3em;
+
+  /* Spacing (8-pt) */
+  --a2-s1: 8px; --a2-s2: 16px; --a2-s3: 24px; --a2-s4: 32px; --a2-s5: 40px;
+  --a2-gutter: 28px;        /* between widgets and screen edge */
+  --a2-pad: 30px 36px 28px; /* panel body padding (M) */
+  --a2-pad-s: 22px 32px 24px;
+
+  /* Frame geometry */
+  --a2-rim-w: 2px;
+  --a2-corner: 38px;        /* gold corner arm length */
+  --a2-corner-r: 20px;      /* corner curl radius */
+  --a2-corner-inset: 6px;
+  --a2-diamond: 9px;
+
+  /* Touch */
+  --a2-hit: 56px;           /* min touch target (theme button) */
+  --a2-row: 64px;           /* min list row height */
+
+  /* Motion */
+  --a2-t-theme: 400ms;
+  --a2-t-press: 120ms;
+  --a2-t-check: 180ms;
+  --a2-pulse: 1.6s;
+  --a2-spin: 24s;
+  --a2-soon-ms: 1200000;    /* 20 min — keep in sync with a2-time.js */
+  --a2-t-toast: 240ms;      /* toast slide-in */
+  --a2-t-hp: 200ms;         /* HP fill */
+  --a2-t-lag: 900ms;        /* trailing HP chunk (starts after 250ms) */
+  --a2-long-press: 600ms;   /* mode pin (keep in sync with A2Mode.LONG_PRESS_MS) */
+}

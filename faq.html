@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-theme="elyos">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — A2Naki Companion</title>
+<meta name="description" content="Short answers about A2Naki Companion: is it safe, the AION 2 terms of service risk, Npcap, Windows SmartScreen, Xeneon Edge or browser, iCUE import, stored data and languages.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0d1126">
+<link rel="icon" href="assets/img/brand/a2naki-temp-256.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/brand/a2naki-temp-256.png">
+<link rel="stylesheet" href="assets/a2-tokens.css">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__in">
+    <a class="brand" href="index.html" aria-label="A2Naki Companion — home">
+      <span class="brand__mark brand__mark--img" aria-hidden="true"><!-- TEMP logo (the app icon) until the real logo is ready --><img src="assets/img/brand/a2naki-temp-256.png" width="38" height="38" alt=""></span>
+      <span class="brand__name">A2Naki<small>Companion</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="faq.html" aria-current="page">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="nav__cta" href="beta.html">Closed beta</a>
+    </nav>
+    <button class="theme-btn" type="button" data-theme-toggle aria-label="Switch faction look"><i class="ic" aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head" aria-labelledby="faq-title">
+    <div class="wrap wrap--narrow">
+      <p class="kicker rise rise--1">Frequently asked</p>
+      <h1 id="faq-title" class="rise rise--2">Short <b>answers</b></h1>
+      <p class="lead rise rise--3">The honest version, including the parts we can’t promise.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="Questions">
+    <div class="wrap wrap--narrow">
+      <div class="faq">
+
+        <details id="safe" open>
+          <summary><i class="ic i-shield" aria-hidden="true"></i>Is it safe? What about the terms of service?</summary>
+          <div class="faq__a">
+            <p>The app is <strong>passive and read-only</strong>. It only listens to data the game server already sends to your PC. It never sends anything to the game, never changes game files, never reads game memory and never injects anything.</p>
+            <p><strong>The risk is real, though:</strong> NCSOFT may still consider reading game traffic a breach of the AION 2 terms of service, and that could put your game account at risk — up to a ban. Tools like this are widely used, but there is no guarantee. You decide whether to use it.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><i class="ic i-processor" aria-hidden="true"></i>Why does it need Npcap?</summary>
+          <div class="faq__a">
+            <p><a href="https://npcap.com">Npcap</a> is a free network driver (used by tools like Wireshark) that lets a program receive a copy of the network traffic on your PC. A2Naki Companion uses it receive-only. You install it once, from npcap.com; it needs administrator rights because it is a driver.</p>
+            <p>Keep the default options and leave “Restrict Npcap driver’s access to Administrators only” <strong>unticked</strong>, otherwise the app can’t use it.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><i class="ic i-alarm-clock" aria-hidden="true"></i>Windows says “Windows protected your PC”</summary>
+          <div class="faq__a">
+            <p>That’s Windows SmartScreen. The setup is not code-signed yet (a signing certificate costs money a free fan project doesn’t have), so Windows warns about it. Click <strong>More info</strong>, then <strong>Run anyway</strong>.</p>
+            <p>Only do this for a copy you got from the official release page, and check it against the published <code>SHA256SUMS.txt</code>.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><i class="ic i-portal" aria-hidden="true"></i>Do I need a Xeneon Edge?</summary>
+          <div class="faq__a">
+            <p>No. The <strong>Xeneon Edge</strong> version is three page widgets in iCUE — Group, Progress / World and Performance — each filling one page of the 2560 × 720 touchscreen.</p>
+            <p>The <strong>browser page</strong> shows pages 1 and 2 together in one Chrome or Edge window, with the same live data and the same look. It fits the window: three columns on a wide screen, two on a tablet held upright, one on a narrow window. Put it on a second monitor, a laptop, or a tablet next to your keyboard. CPU, GPU and FPS need iCUE, so they only show on the Edge.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><i class="ic i-upgrade" aria-hidden="true"></i>How do I get the widgets into iCUE?</summary>
+          <div class="faq__a">
+            <p>At the end of setup, click <strong>Import all three widgets into iCUE…</strong> (or later from the tray menu). iCUE asks once per widget — click Import each time, and the next one opens by itself.</p>
+            <p>Importing only adds them to iCUE’s widget list (group “A2Naki”). Then create three pages on the Edge, drag one page widget onto each, and set its size to <strong>XL</strong> under Appearance → Size. You need iCUE 5.47 or newer.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><i class="ic i-padlock" aria-hidden="true"></i>What data is stored, and where?</summary>
+          <div class="faq__a">
+            <p>Everything stays on your PC. The app has no account, no telemetry and sends nothing over the internet.</p>
+            <dl class="store">
+              <dt>Settings</dt><dd><code>%APPDATA%\A2Naki\settings.json</code></dd>
+              <dt>Widget settings</dt><dd><code>%APPDATA%\A2Naki\widget-prefs.json</code> — theme, language, chosen character</dd>
+              <dt>Bridge token</dt><dd><code>%APPDATA%\A2Naki\bridge-token.txt</code> — readable only by your Windows user</dd>
+              <dt>What it learned</dt><dd>Fight history, boss patterns, buffs, crafting levels — in <code>%APPDATA%\A2Naki</code></dd>
+              <dt>Logs</dt><dd><code>%LOCALAPPDATA%\A2Naki\logs</code> — last 7 days</dd>
+              <dt>Recordings</dt><dd><code>%LOCALAPPDATA%\A2Naki\recordings</code> — only when you switch recording on</dd>
+            </dl>
+            <p>A bug report is a zip the app writes to your Desktop (logs, version, settings — never the token). It uploads nothing; you decide whether to send it.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary><i class="ic i-world" aria-hidden="true"></i>Which languages?</summary>
+          <div class="faq__a">
+            <p>The dashboard speaks English, Greek, German, French, Spanish, Portuguese (BR), Russian, Japanese, Korean and Chinese (Simplified) — gear button → Settings → Language.</p>
+            <p>Part names stay English, as in the game, and the spoken boss warnings are English only. The closed beta itself runs in English.</p>
+          </div>
+        </details>
+
+      </div>
+
+      <p class="dim" style="margin-top:40px">Another question? Ask in the beta channels once you’re in, or read the <a href="privacy.html">privacy page</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div>
+        <p><strong>A2Naki Companion</strong> — free, no account, no telemetry.</p>
+        <p>Made by players, for players.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="beta.html">Closed beta</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+    <div class="legal">
+      <p>AION 2 is a trademark of NCSOFT Corporation. A2Naki Companion is an independent fan project, not affiliated with or endorsed by NCSOFT or Corsair.</p>
+      <p>Icons from <a href="https://game-icons.net">game-icons.net</a> by Lorc, Delapouite and contributors, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>; class icons drawn for A2Naki. Fonts: <a href="assets/fonts/OFL-cinzel.txt">Cinzel</a> and <a href="assets/fonts/OFL-jost.txt">Jost</a>, SIL Open Font License 1.1. Screenshots and clips show demo data only.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

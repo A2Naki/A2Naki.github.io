@@ -1,0 +1,6 @@
+Icons
+-----
+a2-class-*.svg   Drawn for A2Naki Companion (own work).
+All other *.svg  game-icons.net (https://game-icons.net) by Lorc, Delapouite and contributors,
+                 licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/).
+                 Recoloured at runtime via CSS masks; shapes unchanged.
