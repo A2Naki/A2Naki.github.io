@@ -133,10 +133,10 @@ html:not([data-theme]) .only-asmodian { display: none !important; }
 /* ---------- Typography ---------- */
 .kicker {
   display: inline-flex; align-items: center; gap: 14px; margin: 0 0 18px;
-  font-family: var(--a2-font-title); font-weight: 600; font-size: .8125rem;
+  font-family: var(--a2-font-title); font-weight: 600; font-size: 1.5rem;
   letter-spacing: var(--a2-track-kicker); text-transform: uppercase; color: var(--a2-title);
 }
-.kicker::before { content: ""; width: 9px; height: 9px; background: var(--a2-gold); transform: rotate(45deg); flex: none; }
+.kicker::before { content: ""; width: 12px; height: 12px; background: var(--a2-gold); transform: rotate(45deg); flex: none; }
 h1, h2, h3 { font-family: var(--a2-font-title); font-weight: 600; color: var(--a2-title); margin: 0; line-height: 1.12; letter-spacing: .02em; text-wrap: balance; }
 h2 { font-size: var(--s-fs-h2); margin-bottom: .55em; }
 h3 { font-size: var(--s-fs-h3); letter-spacing: .06em; margin-bottom: .5em; }
@@ -454,7 +454,7 @@ h3 { font-size: var(--s-fs-h3); letter-spacing: .06em; margin-bottom: .5em; }
   .faq dl.store { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .faq dl.store dd { margin-bottom: 10px; }
   .btn { width: 100%; padding: 0 20px; font-size: .875rem; letter-spacing: .1em; }
-  .kicker { letter-spacing: .2em; text-wrap: balance; }
+  .kicker { font-size: 1.125rem; letter-spacing: .2em; text-wrap: balance; }
   .cta .frame__body { padding: 44px 28px 40px; }
   .frame__body { padding: 36px 24px 32px; }
   .hero__cta { gap: 14px; }
