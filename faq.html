@@ -102,8 +102,38 @@
           <summary><i class="ic i-hourglass" aria-hidden="true"></i>How do I practise my rotation on the training dummy?</summary>
           <div class="faq__a">
             <p>Hit a <strong>Punching Bag</strong> or a <strong>Training Scarecrow</strong> (the melee one too). The target card in the Encounter turns into a training card: pick a length from 30 seconds to 5 minutes before you start — the clock starts on your first hit — and watch your DPS against your last run and your best at the same second.</p>
-            <p>Stop hitting for a few seconds and the run is over; hit again for the next one. Every run is kept with your rotation, combat power, item level, stats, buffs and gear — the last 100 per character. On the browser page, <strong>Summary → Analysis ↗</strong> puts two runs side by side and marks what changed, down to the gear slot you swapped.</p>
-            <p>Stats come from the game when you log in or change zone, not when you swap gear: change zone once after swapping so the comparison has the new numbers. If you started A2Naki while already in the game, change zone once too, so it knows your character.</p>
+            <p>Stop hitting for a few seconds and the run is over; hit again for the next one. Every run is kept with your rotation, combat power, item level, stats, buffs and gear — the last 100 per character. On the browser page, <strong>Summary → Analysis ↗</strong> puts two runs side by side and marks what changed, down to the gear slot you swapped. The meter overlay shows the training card too while you train.</p>
+            <p>While you hit, the card tells you when you stood still without a skill or left a skill ready unused, and draws your run against your best one; the voice counts you in and says how the run went (switch it off under Warnings → Training voice). A finished run shows your opener against the rest, crit and back-attack rates, your buffs’ uptime and the average of your last five runs. On the Analysis page you can give a run a label (“new gloves”) and compare the labels.</p>
+            <p>Stats come from the game when you log in or change zone, not when you swap gear: change zone once after swapping so the comparison has the new numbers. If you started A2Naki while already in the game, the training card still works, and your runs are given to your character at your next zone change or teleport.</p>
+          </div>
+        </details>
+
+        <details id="training-missing">
+          <summary><i class="ic i-hourglass" aria-hidden="true"></i>I hit the dummy but no training card shows</summary>
+          <div class="faq__a">
+            <p>Check three things:</p>
+            <ul>
+              <li><strong>Which screen?</strong> The training card sits where the target card is: on the Xeneon Edge, on the browser page and, while you train, at the top of the meter overlay.</li>
+              <li><strong>An old browser tab?</strong> A browser page opened before you updated A2Naki keeps the old version. From 0.2.24 the page reloads by itself after an update; before that, press <strong>F5</strong> once.</li>
+              <li><strong>Which dummy?</strong> Punching Bags and Training Scarecrows count. Another kind of dummy? Send us a bug report with a short recording (see below).</li>
+            </ul>
+          </div>
+        </details>
+
+        <details id="warnings">
+          <summary><i class="ic i-alarm-clock" aria-hidden="true"></i>What do the spoken boss warnings say, and can I change them?</summary>
+          <div class="faq__a">
+            <p>On bosses the app knows, the voice says short phrases at the right moment — <em>“Avoid!”</em>, <em>“Stop DPS, run away from boss!”</em>, <em>“Kael marked, move to Kael!”</em>, <em>“Stagger!”</em> — and the same line shows on the target card. Some come a little early (<em>“Stop DPS soon!”</em>).</p>
+            <p>Gear button → <strong>Warnings</strong>: voice on or off, volume, speed, how many seconds ahead, and one switch per kind of warning. <strong>Training voice</strong> is the countdown and the result on the training dummy.</p>
+            <p><strong>Count boss casts</strong> (off by default) is for learning a new boss: every spell the boss casts gets a number the first time — 1, 2, 3 — and keeps it, and the voice says the number each time it comes. Tell us in the beta channel “3 should say Get out” and the next version says it.</p>
+          </div>
+        </details>
+
+        <details id="report">
+          <summary><i class="ic i-upgrade" aria-hidden="true"></i>How do I report a bug with a recording?</summary>
+          <div class="faq__a">
+            <p>Tray icon → <strong>Start recording</strong>, play until the problem happens (a minute is often enough), then tray icon → <strong>Create bug report…</strong> with <strong>Include the recording</strong> ticked. Click <strong>Send to A2Naki</strong> and post the id it shows in the beta channel — or upload the zip from your Desktop with the link pinned there. Recordings are too big for a Discord message.</p>
+            <p>A recording holds the game traffic around you, including the names of players nearby; it stays on your PC unless you send it, and it is deleted after 7 days.</p>
           </div>
         </details>
 
