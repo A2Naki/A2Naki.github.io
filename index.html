@@ -3,8 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A2Naki Companion — a live dashboard for AION 2</title>
-<meta name="description" content="A2Naki Companion is a free fan-made live dashboard for AION 2: damage meter, boss HP and spoken mechanic warnings, party, buffs, Kinah per hour, homework and world timers — on a Corsair Xeneon Edge or in any browser.">
+<title>A2Naki Companion — AION 2 DPS meter, boss warnings &amp; timers</title>
+<meta name="description" content="Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge.">
+<link rel="canonical" href="https://a2naki.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A2Naki Companion">
+<meta property="og:title" content="A2Naki Companion — AION 2 DPS meter, boss warnings &amp; timers">
+<meta property="og:description" content="Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge.">
+<meta property="og:url" content="https://a2naki.github.io/">
+<meta property="og:image" content="https://a2naki.github.io/assets/img/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A2Naki Companion — a live DPS meter and dashboard for AION 2">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A2Naki Companion","url":"https://a2naki.github.io/","image":"https://a2naki.github.io/assets/img/og-card.jpg","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge."}</script>
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0d1126">
 <link rel="icon" href="assets/img/brand/a2naki-256.png" type="image/png">
@@ -40,7 +52,7 @@
     <div class="hero__aether" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="wrap hero__text">
       <p class="kicker rise rise--1">Free fan project · for AION 2</p>
-      <h1 id="hero-title" class="rise rise--2"><b>A2Naki</b> Companion<span>A live dashboard for AION 2</span></h1>
+      <h1 id="hero-title" class="rise rise--2"><b>A2Naki</b> Companion<span>A live DPS meter and dashboard for AION 2</span></h1>
       <p class="lead rise rise--3">On any browser, a Corsair Xeneon Edge or right on top of the game: your fight, your party and your progress at a glance — so your eyes stay on the game.</p>
       <div class="hero__cta rise rise--4">
         <a class="btn btn--primary" href="beta.html">Join the closed beta</a>
@@ -55,7 +67,7 @@
              when it is on screen and in the current faction look, never autoplays with prefers-reduced-motion (play button). -->
         <div class="motion only-elyos" data-motion>
           <video class="motion__v" width="2537" height="697" muted loop playsinline preload="none" poster="assets/img/edge-elyos.webp"
-                 aria-label="Page 1 of the dashboard on a Xeneon Edge, Elyos look, moving: the Encounter with Enraged Reda at 69 percent HP, a ‘Cleanse Kael!’ then an ‘Avoid!’ warning counting down, the Berk Strike cast bar filling and the kill projection, next to the Cleric buff timers and the Party card with a low-HP alert. Demo data.">
+                 aria-label="The AION 2 dashboard on a Corsair Xeneon Edge, page 1, Elyos look, moving: the Encounter with Enraged Reda at 69 percent HP, a ‘Cleanse Kael!’ then an ‘Avoid!’ warning counting down, the Berk Strike cast bar filling and the kill projection, next to the Cleric buff timers and the Party card with a low-HP alert. Demo data.">
             <source data-src="assets/video/hero-elyos.webm" type="video/webm">
             <source data-src="assets/video/hero-elyos.mp4" type="video/mp4">
           </video>
@@ -78,7 +90,7 @@
   <!-- ============ WHAT IT SHOWS ============ -->
   <section class="section" id="features" aria-labelledby="features-title">
     <div class="wrap">
-      <h2 id="features-title" class="kicker">What it shows</h2>
+      <h2 id="features-title" class="kicker">What it shows: DPS meter, boss warnings, party &amp; timers</h2>
       <p class="lead reveal">One screen per situation — in a fight, between fights, and on the long road of dailies. Every number comes from the game itself; if something isn’t known, it says so instead of guessing.</p>
 
       <div class="chapters" style="margin-top:clamp(48px,6vw,80px)">
@@ -88,7 +100,7 @@
             <span class="chapter__num">I · In the fight</span>
             <h3>Read the boss before it reads you</h3>
             <ul class="feat">
-              <li><i class="ic i-histogram" aria-hidden="true"></i><div><b>Damage &amp; healing meter</b><span>Damage, healing, taken, skills and interrupts for the whole group, your own row in gold.</span></div></li>
+              <li><i class="ic i-histogram" aria-hidden="true"></i><div><b>DPS &amp; healing meter</b><span>Damage, healing, taken, skills and interrupts for the whole group, your own row in gold.</span></div></li>
               <li><i class="ic i-dragon-head" aria-hidden="true"></i><div><b>Boss HP and cast bars</b><span>HP with a trailing damage chunk, the groggy gauge, every cast as it happens — interruptible ones marked — and a kill projection that tells you whether you beat the enrage.</span></div></li>
               <li><i class="ic i-alarm-clock" aria-hidden="true"></i><div><b>Spoken boss-mechanic warnings</b><span>“Take cover!”, “Avoid!”, “Move away from the orbs!” — on screen and out loud, a few seconds ahead. You choose which and when.</span></div></li>
               <li><i class="ic i-trophy" aria-hidden="true"></i><div><b>Fight summary &amp; history</b><span>Kill or wipe, time vs your best, top damage and healing, deaths with the last hits that caused them — and who resurrected whom.</span></div></li>
@@ -101,7 +113,7 @@
             <div class="shot__device">
               <div class="motion only-elyos" data-motion>
           <video class="motion__v" width="1690" height="697" muted loop playsinline preload="none" poster="assets/img/detail-encounter-elyos.webp"
-                 aria-label="Close-up of the Encounter, moving: Enraged Reda at 69 percent, the ‘Avoid!’ warning counting down, the kill projection ‘Kill ≈ 7:12 · Enrage ≈ 8:42’, the groggy gauge draining, the Berk Strike cast bar filling, four upcoming boss skills, and the damage meter ranking five players. Demo data.">
+                 aria-label="Close-up of the AION 2 boss encounter and DPS meter, moving: Enraged Reda at 69 percent, the ‘Avoid!’ warning counting down, the kill projection ‘Kill ≈ 7:12 · Enrage ≈ 8:42’, the groggy gauge draining, the Berk Strike cast bar filling, four upcoming boss skills, and the damage meter ranking five players. Demo data.">
             <source data-src="assets/video/encounter-elyos.webm" type="video/webm">
             <source data-src="assets/video/encounter-elyos.mp4" type="video/mp4">
           </video>
@@ -167,7 +179,7 @@
           </div>
           <figure class="shot">
             <div class="shot__device">
-              <a class="zoom only-elyos" href="assets/img/detail-progress-elyos.webp" title="Open full size"><img src="assets/img/detail-progress-elyos.webp" width="1280" height="400" loading="lazy" alt="Homework with daily tasks and Od energy, World timers counting down to Shugo Festival and Dimensional Invasion, and Kinah and Crafting showing plus 2.9 million for the session. Demo data."></a>
+              <a class="zoom only-elyos" href="assets/img/detail-progress-elyos.webp" title="Open full size"><img src="assets/img/detail-progress-elyos.webp" width="1280" height="400" loading="lazy" alt="AION 2 homework tracker with daily tasks and Od energy, World timers counting down to Shugo Festival and Dimensional Invasion, and Kinah and Crafting showing plus 2.9 million for the session. Demo data."></a>
               <a class="zoom only-asmodian" href="assets/img/detail-progress-asmodian.webp" title="Open full size"><img src="assets/img/detail-progress-asmodian.webp" width="1280" height="400" loading="lazy" alt="Homework, World timers and Kinah in the Asmodian look. Demo data."></a>
             </div>
             <figcaption>Homework, World and Kinah &amp; Crafting from page 2.</figcaption>
@@ -218,8 +230,8 @@
       <div class="gallery" style="margin-top:40px">
         <figure class="shot reveal">
           <div class="shot__device">
-              <a class="zoom only-elyos" href="assets/img/browser-elyos.webp" title="Open full size"><img src="assets/img/browser-elyos.webp" width="1280" height="800" loading="lazy" alt="The browser page at 1280 by 800 in the Elyos look: Encounter, Cleric, Party, Homework, World, Kinah and Crafting, and Status in a three-column grid. Demo data."></a>
-            <a class="zoom only-asmodian" href="assets/img/browser-asmodian.webp" title="Open full size"><img src="assets/img/browser-asmodian.webp" width="1280" height="800" loading="lazy" alt="The browser page at 1280 by 800 in the Asmodian look, seven cards in a three-column grid. Demo data."></a>
+              <a class="zoom only-elyos" href="assets/img/browser-elyos.webp" title="Open full size"><img src="assets/img/browser-elyos.webp" width="1280" height="800" loading="lazy" alt="The AION 2 DPS meter and dashboard in a browser at 1280 by 800, Elyos look: Encounter, Cleric, Party, Homework, World, Kinah and Crafting, and Status in a three-column grid. Demo data."></a>
+            <a class="zoom only-asmodian" href="assets/img/browser-asmodian.webp" title="Open full size"><img src="assets/img/browser-asmodian.webp" width="1280" height="800" loading="lazy" alt="The AION 2 dashboard in a browser at 1280 by 800, Asmodian look, seven cards in a three-column grid. Demo data."></a>
             </div>
           <figcaption><span class="chip">Demo data</span>&nbsp; The browser page in a 1280 × 800 window. Names and numbers are made up.</figcaption>
         </figure>
