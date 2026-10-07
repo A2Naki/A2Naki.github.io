@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A2Naki Companion — AION 2 DPS meter, boss warnings &amp; timers</title>
-<meta name="description" content="Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge.">
+<meta name="description" content="Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, training on the dummy with run comparison, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge.">
 <link rel="canonical" href="https://a2naki.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="A2Naki Companion">
 <meta property="og:title" content="A2Naki Companion — AION 2 DPS meter, boss warnings &amp; timers">
-<meta property="og:description" content="Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge.">
+<meta property="og:description" content="Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, training on the dummy with run comparison, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge.">
 <meta property="og:url" content="https://a2naki.github.io/">
 <meta property="og:image" content="https://a2naki.github.io/assets/img/og-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="A2Naki Companion — a live DPS meter and dashboard for AION 2">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A2Naki Companion","url":"https://a2naki.github.io/","image":"https://a2naki.github.io/assets/img/og-card.jpg","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A2Naki Companion","url":"https://a2naki.github.io/","image":"https://a2naki.github.io/assets/img/og-card.jpg","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, training on the dummy with run comparison, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge."}</script>
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0d1126">
 <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
@@ -91,7 +91,7 @@
   <!-- ============ WHAT IT SHOWS ============ -->
   <section class="section" id="features" aria-labelledby="features-title">
     <div class="wrap">
-      <h2 id="features-title" class="kicker">What it shows: DPS meter, boss warnings, party &amp; timers</h2>
+      <h2 id="features-title" class="kicker">What it shows: DPS meter, boss warnings, training, party &amp; timers</h2>
       <p class="lead reveal">One screen per situation — in a fight, between fights, and on the long road of dailies. Every number comes from the game itself; if something isn’t known, it says so instead of guessing.</p>
 
       <div class="chapters" style="margin-top:clamp(48px,6vw,80px)">
@@ -101,9 +101,9 @@
             <span class="chapter__num">I · In the fight</span>
             <h3>Read the boss before it reads you</h3>
             <ul class="feat">
-              <li><i class="ic i-histogram" aria-hidden="true"></i><div><b>DPS &amp; healing meter</b><span>Damage, healing, taken, skills and interrupts for the whole group, your own row in gold.</span></div></li>
-              <li><i class="ic i-dragon-head" aria-hidden="true"></i><div><b>Boss HP and cast bars</b><span>HP with a trailing damage chunk, the groggy gauge, every cast as it happens — interruptible ones marked — and a kill projection that tells you whether you beat the enrage.</span></div></li>
-              <li><i class="ic i-alarm-clock" aria-hidden="true"></i><div><b>Spoken boss-mechanic warnings</b><span>“Take cover!”, “Avoid!”, “Move away from the orbs!” — on screen and out loud, a few seconds ahead. You choose which and when.</span></div></li>
+              <li><i class="ic i-histogram" aria-hidden="true"></i><div><b>DPS &amp; healing meter</b><span>Damage, rDPS, healing, taken, skills and utility for the whole group, your own row in gold. Rates with two decimals, so 9.33k and 9.41k are not the same number.</span></div></li>
+              <li><i class="ic i-dragon-head" aria-hidden="true"></i><div><b>Boss HP and cast bars</b><span>HP with a trailing damage chunk, the stagger gauge, every cast as it happens — interruptible ones marked — and a kill projection that tells you whether you beat the enrage.</span></div></li>
+              <li><i class="ic i-alarm-clock" aria-hidden="true"></i><div><b>Spoken boss-mechanic warnings, boss by boss</b><span>“Stop DPS soon!”, “Kael marked, move to Kael!”, “Kill the flag!”, “Avoid!” — written for each boss from real pulls, on screen and out loud, ahead of time where the boss gives it away (a cast, a debuff, a boss HP). You choose which and when.</span></div></li>
               <li><i class="ic i-trophy" aria-hidden="true"></i><div><b>Fight summary &amp; history</b><span>Kill or wipe, time vs your best, top damage and healing, deaths with the last hits that caused them — and who resurrected whom.</span></div></li>
               <li><i class="ic i-dungeon-gate" aria-hidden="true"></i><div><b>Dungeon &amp; Events</b><span>Switch from one pull to the whole dungeon run, world boss or field event, through respawns and group changes. Cleared runs keep your records — best DPS, best HPS and fastest clear — and your row shows how you’re doing against them.</span></div></li>
               <li><i class="ic i-portal" aria-hidden="true"></i><div><b>Meter overlay in the game</b><span>Just the meter, in a small see-through window on top of the game. Clicks go straight through to the game; Ctrl+Shift+1–8 switch tabs. Needs Borderless or Windowed mode.</span></div></li>
@@ -184,6 +184,26 @@
               <a class="zoom only-asmodian" href="assets/img/detail-progress-asmodian.webp" title="Open full size"><img src="assets/img/detail-progress-asmodian.webp" width="1280" height="352" loading="lazy" alt="Homework, World timers and Kinah in the Asmodian look. Demo data."></a>
             </div>
             <figcaption>Homework, World and Kinah &amp; Crafting from page 2.</figcaption>
+          </figure>
+        </article>
+
+        <article class="chapter chapter--flip reveal">
+          <div class="chapter__text">
+            <span class="chapter__num">IV · Getting better</span>
+            <h3>Train, compare, see what changed</h3>
+            <ul class="feat">
+              <li><i class="ic i-hourglass" aria-hidden="true"></i><div><b>Training on the dummy</b><span>Hit a Punching Bag or a Training Scarecrow and the target card becomes a training card: pick 30 s to 5 minutes, the clock starts on your first hit, and you see your DPS against your last run and your best — at the same second.</span></div></li>
+              <li><i class="ic i-scroll-unfurled" aria-hidden="true"></i><div><b>Every run kept with your setup</b><span>Rotation, combat power, item level, stats, buffs and gear are saved with each run. Pause and hit again for the next one; the last 100 runs per character stay.</span></div></li>
+              <li><i class="ic i-anvil" aria-hidden="true"></i><div><b>Which piece changed</b><span>Put two runs side by side: the rows that differ are marked, down to the gear slot you swapped or upgraded.</span></div></li>
+              <li><i class="ic i-histogram" aria-hidden="true"></i><div><b>Analysis page</b><span>In the browser: DPS over the fight with its axes, your rotation per skill with the gaps where a skill was ready and unused, two fights skill by skill, and what stopped you and for how long.</span></div></li>
+            </ul>
+          </div>
+          <figure class="shot shot--tilt">
+            <div class="shot__device">
+              <a class="zoom only-elyos" href="assets/img/analysis-training-elyos.webp" title="Open full size"><img src="assets/img/analysis-training-elyos.webp" loading="lazy" alt="The Analysis page comparing two training runs on the dummy: DPS over the run for run A and run B, combat power, item level, stats, buffs and the gear slot that changed marked, then the rotation of each skill for both runs. Demo data."></a>
+              <a class="zoom only-asmodian" href="assets/img/analysis-training-asmodian.webp" title="Open full size"><img src="assets/img/analysis-training-asmodian.webp" loading="lazy" alt="Two training runs compared on the Analysis page, in the Asmodian look. Demo data."></a>
+            </div>
+            <figcaption>Two training runs side by side on the Analysis page.</figcaption>
           </figure>
         </article>
 
