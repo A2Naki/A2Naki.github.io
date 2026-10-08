@@ -219,6 +219,7 @@ h3 { font-size: var(--s-fs-h3); letter-spacing: .06em; margin-bottom: .5em; }
 .hero h1 span { display: block; margin-top: .35em; font-size: .3em; letter-spacing: .32em; color: var(--a2-title); font-weight: 600; text-shadow: none; }
 .hero .lead { margin: 28px auto 0; max-width: 40ch; color: var(--a2-dim); }
 .hero__cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 28px; margin: 40px 0 0; }
+.hero__cta--download { margin-top: 18px; }
 .hero__note { margin: 18px 0 0; font-size: var(--s-fs-small); color: var(--a2-dim); }
 
 /* The Edge: a long bezel holding the real page-1 screenshot */
