@@ -603,3 +603,9 @@ a.card:hover, a.card:focus-visible { color: var(--a2-text); transform: translate
 .prose ol { margin: 0 0 1.2em; padding-left: 1.4em; color: var(--a2-dim); }
 .prose ol li { margin-bottom: .55em; }
 .prose ol li::marker { color: var(--a2-gold-text); font-family: var(--a2-font-title); }
+
+/* Changelog (site/changelog.mjs) */
+.log { list-style: none; margin: 10px 0 0; padding: 0; }
+.log li { position: relative; padding: 6px 0 6px 22px; color: var(--a2-dim); border-bottom: 1px solid var(--s-line); }
+.log li::before { content: ""; position: absolute; left: 3px; top: 1em; width: 7px; height: 7px; background: var(--a2-glow); transform: rotate(45deg); }
+.log__group { margin: 22px 0 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--a2-title); }
