@@ -495,9 +495,9 @@ h3 { font-size: var(--s-fs-h3); letter-spacing: .06em; margin-bottom: .5em; }
 @media (max-width: 900px) { .nav a { padding: 0 10px; } }
 
 /* AION 2 Global Discord, left of the main menu (owner 2026-10-08: the community supports A2Naki) */
-.community { display: flex; align-items: center; gap: 12px; min-width: 0; }
-.community__txt { max-width: 250px; font-size: .8125rem; line-height: 1.3; color: var(--a2-dim); }
-.community__btn { display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; white-space: nowrap;
+.community { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; min-width: 0; }
+.community__txt { font-size: .75rem; line-height: 1.25; color: var(--a2-dim); white-space: nowrap; }
+.community__btn { display: inline-flex; align-items: center; min-height: 32px; padding: 0 14px; white-space: nowrap;
   font-family: var(--a2-font-title); font-weight: 600; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase;
   color: var(--a2-gold-text); text-decoration: none; border: 1px solid var(--a2-gold); background: rgba(233,199,124,.08);
   transition: border-color 160ms, box-shadow 160ms, color 160ms; }
