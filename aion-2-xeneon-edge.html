@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-theme="elyos">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AION 2 on the Corsair Xeneon Edge — iCUE widgets | A2Naki</title>
+<meta name="description" content="Play AION 2 with a Corsair Xeneon Edge: three free iCUE page widgets put the boss card with spoken warnings, a DPS meter, party, buff timers, homework, world timers and FPS on the 2560 × 720 touchscreen. Setup in a few clicks.">
+<link rel="canonical" href="https://a2naki.github.io/aion-2-xeneon-edge.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A2Naki Companion">
+<meta property="og:title" content="AION 2 on the Corsair Xeneon Edge — free iCUE widgets">
+<meta property="og:description" content="Boss warnings, DPS meter, party, timers and FPS on the Xeneon Edge’s 2560 × 720 touchscreen — three iCUE page widgets, free.">
+<meta property="og:url" content="https://a2naki.github.io/aion-2-xeneon-edge.html">
+<meta property="og:image" content="https://a2naki.github.io/assets/img/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AION 2 boss mechanics","item":"https://a2naki.github.io/"},{"@type":"ListItem","position":2,"name":"AION 2 on the Xeneon Edge","item":"https://a2naki.github.io/aion-2-xeneon-edge.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to put AION 2 on a Corsair Xeneon Edge with A2Naki","step":[
+{"@type":"HowToStep","name":"Install A2Naki Companion and Npcap","text":"Run the A2Naki setup from the beta on Discord and install Npcap from npcap.com with its default options."},
+{"@type":"HowToStep","name":"Import the widgets","text":"At the end of setup, click Import all three widgets into iCUE. iCUE asks once per widget; click Import each time. You need iCUE 5.47 or newer."},
+{"@type":"HowToStep","name":"Make three pages","text":"In iCUE, create three pages on the Xeneon Edge and drag one A2Naki page widget onto each: Group, Progress / World and Performance."},
+{"@type":"HowToStep","name":"Set the size to XL","text":"Under Appearance, set each widget's size to XL so it fills the 2560 × 720 screen."}
+]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Does AION 2 support the Corsair Xeneon Edge?","acceptedAnswer":{"@type":"Answer","text":"Not by itself. A2Naki Companion, a free fan project, adds three iCUE page widgets for AION 2 that fill the Xeneon Edge's 2560 × 720 touchscreen with boss warnings, a DPS meter, party, timers and FPS."}},
+{"@type":"Question","name":"Which iCUE version do the AION 2 widgets need?","acceptedAnswer":{"@type":"Answer","text":"iCUE 5.47 or newer, on Windows 10 or 11."}},
+{"@type":"Question","name":"Can I use it without a Xeneon Edge?","acceptedAnswer":{"@type":"Answer","text":"Yes. The same dashboard runs in any browser window — a second monitor, a laptop or a tablet — and the DPS meter also runs as an overlay on top of the game."}}
+]}</script>
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0d1126">
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="assets/img/brand/a2naki-256.png" type="image/png" sizes="256x256">
+<link rel="apple-touch-icon" href="assets/img/brand/a2naki-256.png">
+<link rel="stylesheet" href="assets/a2-tokens.css">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__in">
+    <a class="brand" href="index.html" aria-label="A2Naki Companion — home">
+      <span class="brand__mark brand__mark--img" aria-hidden="true"><img src="assets/img/brand/a2naki-256.png" width="38" height="38" alt=""></span>
+      <span class="brand__name">A2Naki<small>Companion</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Bosses</a>
+      <a href="aion-2-dps-meter.html">DPS meter</a>
+      <a href="aion-2-timers.html">Timers</a>
+      <a href="faq.html">FAQ</a>
+      <a class="nav__cta" href="beta.html">Beta</a>
+    </nav>
+    <button class="theme-btn" type="button" data-theme-toggle aria-label="Switch faction look"><i class="ic" aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="page-title">
+    <div class="hero__aether" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="wrap hero__text">
+      <ol class="crumbs" style="justify-content:center"><li><a href="index.html">Boss mechanics</a></li><li>Xeneon Edge</li></ol>
+      <p class="kicker rise rise--1">Free iCUE widgets</p>
+      <h1 id="page-title" class="rise rise--2"><b>AION 2</b> on the Xeneon Edge<span>Your fight, your party, your dailies</span></h1>
+      <p class="lead rise rise--3">Three page widgets turn Corsair’s 2560 × 720 touchscreen into an AION 2 dashboard: the boss and its mechanics, the DPS meter, your party, timers and FPS — so your eyes stay on the game.</p>
+      <div class="hero__cta rise rise--4">
+        <a class="btn btn--primary" href="https://discord.gg/mVgms6PWHt" rel="noopener" target="_blank">Get the beta on Discord</a>
+        <a class="btn" href="#setup">Set it up</a>
+      </div>
+      <p class="hero__note rise rise--4">Windows 10 / 11 · iCUE 5.47+ · AION 2 Global</p>
+    </div>
+
+    <figure class="edge rise rise--4">
+      <div class="edge__device">
+        <div class="motion only-elyos" data-motion>
+          <video class="motion__v" width="2537" height="697" muted loop playsinline preload="none" poster="assets/img/edge-elyos.webp"
+                 aria-label="AION 2 on a Corsair Xeneon Edge, page 1, Elyos look, moving: the boss card with an interrupt warning and a filling cast bar, the damage meter, buff timers and the Party card. Demo data.">
+            <source data-src="assets/video/hero-elyos.webm" type="video/webm">
+            <source data-src="assets/video/hero-elyos.mp4" type="video/mp4">
+          </video>
+          <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
+        </div>
+        <div class="motion only-asmodian" data-motion>
+          <video class="motion__v" width="2537" height="697" muted loop playsinline preload="none" poster="assets/img/edge-asmodian.webp"
+                 aria-label="The same Xeneon Edge page in the Asmodian look, moving. Demo data.">
+            <source data-src="assets/video/hero-asmodian.webm" type="video/webm">
+            <source data-src="assets/video/hero-asmodian.mp4" type="video/mp4">
+          </video>
+          <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
+        </div>
+      </div>
+      <div class="edge__stand" aria-hidden="true"></div>
+      <figcaption class="edge__cap"><span class="chip">Demo data</span><span>Page 1 · Group, exactly as it runs on the 2560 × 720 Edge. Tap the wing to see the other faction.</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="section" aria-labelledby="pages-title">
+    <div class="wrap">
+      <p class="kicker">Three pages</p>
+      <h2 id="pages-title">One swipe per situation</h2>
+      <p class="lead">Each page fills the whole Edge. Swipe when what you are doing changes — never in the middle of a pull.</p>
+      <ul class="cards">
+        <li><div class="card"><i class="ic i-dragon-head" aria-hidden="true"></i><h3>1 · Group</h3><p>The boss card with HP, stagger gauge, cast bar and <a href="aion-2-boss-mod.html">spoken mechanic warnings</a>; the <a href="aion-2-dps-meter.html">DPS meter</a> with damage, healing, taken, skills and history; your buffs and cooldowns; the party with HP and alerts.</p></div></li>
+        <li><div class="card"><i class="ic i-scroll-unfurled" aria-hidden="true"></i><h3>2 · Progress / World</h3><p>Homework for every character, Od energy and tickets, <a href="aion-2-timers.html">world timers</a> for Shugo, Invasion and Rift, field bosses, Kinah per hour and crafting.</p></div></li>
+        <li><div class="card"><i class="ic i-processor" aria-hidden="true"></i><h3>3 · Performance</h3><p>FPS with a graph, CPU and GPU load and temperature, VRAM, ping and the companion’s own status — from iCUE’s sensors.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="setup" aria-labelledby="setup-title">
+    <div class="wrap wrap--narrow">
+      <div class="prose">
+        <p class="kicker">Setup</p>
+        <h2 id="setup-title">From install to Edge in four steps</h2>
+        <ol>
+          <li><strong>Install A2Naki and Npcap.</strong> The setup is in the beta on our Discord; Npcap comes from npcap.com — keep its default options.</li>
+          <li><strong>Import the widgets.</strong> At the end of setup click <em>Import all three widgets into iCUE…</em> (or later from the tray menu). iCUE asks once per widget — click Import each time.</li>
+          <li><strong>Make three pages</strong> on the Edge in iCUE and drag one A2Naki page widget onto each: Group, Progress / World, Performance.</li>
+          <li><strong>Set the size to XL</strong> under Appearance → Size, so each widget fills the screen.</li>
+        </ol>
+        <p>Touch works the way you expect: tap a tab to switch it, tap an alert to clear it. Nothing needs a touch during combat.</p>
+      </div>
+      <div class="note"><p><strong>No Edge?</strong> The same dashboard runs in any browser — a second monitor, a laptop or a tablet — and the DPS meter can sit on top of the game as a see-through overlay. CPU, GPU and FPS need iCUE, so they only show on the Edge.</p></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="q-title">
+    <div class="wrap wrap--narrow">
+      <p class="kicker">Questions</p>
+      <h2 id="q-title">Xeneon Edge FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary><i class="ic i-portal" aria-hidden="true"></i>Does AION 2 support the Xeneon Edge?</summary>
+          <div class="faq__a"><p>Not by itself. A2Naki Companion, a free fan project, adds the three iCUE page widgets for AION 2. It is not made or endorsed by NCSOFT or Corsair.</p></div>
+        </details>
+        <details>
+          <summary><i class="ic i-upgrade" aria-hidden="true"></i>Which iCUE version do I need?</summary>
+          <div class="faq__a"><p>iCUE 5.47 or newer, on Windows 10 or 11. Importing only adds the widgets to iCUE’s list (group “A2Naki”); you place them yourself.</p></div>
+        </details>
+        <details>
+          <summary><i class="ic i-shield" aria-hidden="true"></i>Is it safe for my account?</summary>
+          <div class="faq__a"><p>The app is passive: it receives a copy of what the game server sends to your PC and never sends anything back or touches the game. NCSOFT may still see reading game traffic as against the terms of service — read <a href="faq.html#safe">Is it safe?</a> first.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="frame"><div class="frame__body">
+        <span class="orn orn--t" aria-hidden="true"></span><span class="orn orn--b" aria-hidden="true"></span>
+        <span class="cta__halo" aria-hidden="true"></span>
+        <div>
+          <p class="kicker">Beta · on Discord</p>
+          <h2 id="cta-title">Got an Edge? We want you.</h2>
+          <p>Edge owners who play AION 2 are the testers we need most. Join, import the widgets and tell us what you’d change.</p>
+        </div>
+        <div class="cta__act">
+          <a class="btn btn--primary" href="https://discord.gg/mVgms6PWHt" rel="noopener" target="_blank">Join the A2Naki Discord</a>
+          <small><a href="beta.html">What we ask, and the risks</a></small>
+        </div>
+      </div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div>
+        <p><strong>A2Naki Companion</strong> — free, no account, no telemetry.</p>
+        <p>Made by players, for players.</p>
+        <p>Dungeon boss guides: <a href="aion-2-krao-cave-guide.html">Krao Cave</a> · <a href="aion-2-draupnir-cave-guide.html">Draupnir Cave</a> · <a href="aion-2-fire-temple-guide.html">Fire Temple</a> · <a href="aion-2-urugugu-canyon-guide.html">Urugugu Canyon</a> · <a href="aion-2-vakron-sky-island-guide.html">Vakron Sky Island</a></p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Boss mechanics</a>
+        <a href="aion-2-boss-mod.html">Boss mod</a>
+        <a href="aion-2-dps-meter.html">DPS meter</a>
+        <a href="aion-2-build-min-max.html">Build &amp; min-max</a>
+        <a href="aion-2-timers.html">Timers</a>
+        <a href="aion-2-xeneon-edge.html" aria-current="page">Xeneon Edge</a>
+        <a href="faq.html">FAQ</a>
+        <a href="beta.html">Beta</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+    <div class="legal">
+      <p>AION 2 is a trademark of NCSOFT Corporation. Corsair, iCUE and Xeneon are trademarks of Corsair. A2Naki Companion is an independent fan project, not affiliated with or endorsed by NCSOFT or Corsair.</p>
+      <p>Icons from <a href="https://game-icons.net">game-icons.net</a> by Lorc, Delapouite and contributors, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>; class icons drawn for A2Naki. Fonts: <a href="assets/fonts/OFL-cinzel.txt">Cinzel</a> and <a href="assets/fonts/OFL-jost.txt">Jost</a>, SIL Open Font License 1.1. Screenshots and clips show demo data only.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

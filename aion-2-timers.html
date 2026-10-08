@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" data-theme="elyos">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AION 2 Timers — Shugo, Invasion, Rift &amp; resets | A2Naki</title>
+<meta name="description" content="Live AION 2 timers for the Global servers: countdowns to Shugo Festival, Dimensional Invasion, Spacetime Rift, Artifact Conquest, Arena of Tactics and the daily and weekly reset, in server time and your local time.">
+<link rel="canonical" href="https://a2naki.github.io/aion-2-timers.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A2Naki Companion">
+<meta property="og:title" content="AION 2 Timers — live countdowns">
+<meta property="og:description" content="Shugo Festival, Dimensional Invasion, Spacetime Rift, Arena and the resets — live, in server time and your local time.">
+<meta property="og:url" content="https://a2naki.github.io/aion-2-timers.html">
+<meta property="og:image" content="https://a2naki.github.io/assets/img/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AION 2 boss mechanics","item":"https://a2naki.github.io/"},{"@type":"ListItem","position":2,"name":"AION 2 timers","item":"https://a2naki.github.io/aion-2-timers.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"When is the daily reset in AION 2?","acceptedAnswer":{"@type":"Answer","text":"On the Global servers the daily reset is at 16:00 UTC+9, which is 07:00 UTC — 09:00 in Central Europe in summer, 08:00 in winter. The weekly reset is on Wednesday at the same time. The reset does not move with daylight saving."}},
+{"@type":"Question","name":"How often is the Shugo Festival in AION 2?","acceptedAnswer":{"@type":"Answer","text":"Every hour on the hour, server time; each festival is over within about 30 minutes."}},
+{"@type":"Question","name":"When does the Spacetime Rift open in AION 2?","acceptedAnswer":{"@type":"Answer","text":"Every three hours on Taiwan time (UTC+8): 02:00, 05:00, 08:00, 11:00, 14:00, 17:00, 20:00 and 23:00. You need level 45."}}
+]}</script>
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0d1126">
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="assets/img/brand/a2naki-256.png" type="image/png" sizes="256x256">
+<link rel="apple-touch-icon" href="assets/img/brand/a2naki-256.png">
+<link rel="stylesheet" href="assets/a2-tokens.css">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__in">
+    <a class="brand" href="index.html" aria-label="A2Naki Companion — home">
+      <span class="brand__mark brand__mark--img" aria-hidden="true"><img src="assets/img/brand/a2naki-256.png" width="38" height="38" alt=""></span>
+      <span class="brand__name">A2Naki<small>Companion</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Bosses</a>
+      <a href="aion-2-dps-meter.html">DPS meter</a>
+      <a href="aion-2-timers.html" aria-current="page">Timers</a>
+      <a href="faq.html">FAQ</a>
+      <a class="nav__cta" href="beta.html">Beta</a>
+    </nav>
+    <button class="theme-btn" type="button" data-theme-toggle aria-label="Switch faction look"><i class="ic" aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head" aria-labelledby="page-title">
+    <div class="wrap wrap--narrow">
+      <ol class="crumbs"><li><a href="index.html">Boss mechanics</a></li><li>Timers</li></ol>
+      <p class="kicker rise rise--1">Global servers · live</p>
+      <h1 id="page-title" class="rise rise--2"><b>AION 2</b> timers</h1>
+      <p class="lead rise rise--3">What starts next, in server time and in yours. The same schedule the A2Naki app reads out loud.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="Live countdowns">
+    <div class="wrap wrap--narrow">
+      <div data-live hidden>
+        <div class="clock">
+          <label>Server region <select data-region aria-label="Server region"></select></label>
+          <span>Server time <output data-server-clock>--:--</output></span>
+          <span>Your time <output data-local-clock>--:--</output></span>
+        </div>
+        <ul class="timers" data-timers aria-live="off"></ul>
+        <p class="dim" style="margin-top:16px;font-size:var(--s-fs-small)">Gold = starts within 20 minutes. Field and world bosses are not on a fixed clock — the app shows them live from the game.</p>
+      </div>
+      <noscript><p class="note">Turn on JavaScript for live countdowns; the schedule below works without it.</p></noscript>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="sched-title">
+    <div class="wrap wrap--narrow">
+      <p class="kicker">The schedule</p>
+      <h2 id="sched-title">AION 2 event times on the Global servers</h2>
+      <p class="dim">The game runs on three clocks: resets on UTC+9 without daylight saving, rifts on Taiwan time (UTC+8), and the rest on your server region’s own clock, with daylight saving.</p>
+      <table class="sheet">
+        <thead><tr><th scope="col">Event</th><th scope="col">When</th><th scope="col">Clock</th></tr></thead>
+        <tbody>
+          <tr><td>Daily reset</td><td data-h="When">16:00 every day (= 07:00 UTC)</td><td data-h="Clock">UTC+9</td></tr>
+          <tr><td>Weekly reset</td><td data-h="When">Wednesday 16:00 (= Wednesday 07:00 UTC)</td><td data-h="Clock">UTC+9</td></tr>
+          <tr><td>Shugo Festival</td><td data-h="When">Every hour on the hour, over within about 30 minutes</td><td data-h="Clock">Server time</td></tr>
+          <tr><td>Dimensional Invasion</td><td data-h="When">Every hour at :30</td><td data-h="Clock">Server time</td></tr>
+          <tr><td>Spacetime Rift</td><td data-h="When">Every 3 hours: 02, 05, 08, 11, 14, 17, 20, 23 (level 45)</td><td data-h="Clock">UTC+8</td></tr>
+          <tr><td>Arena of Tactics</td><td data-h="When">11:00–14:00 and 19:00–21:00</td><td data-h="Clock">Server time</td></tr>
+          <tr><td>Artifact Conquest</td><td data-h="When">Wednesday and Saturday 21:30 (still to be confirmed in game)</td><td data-h="Clock">Server time</td></tr>
+          <tr><td>Od energy</td><td data-h="When">+15 every 3 hours: 01, 04, 07 … 22</td><td data-h="Clock">UTC+9</td></tr>
+        </tbody>
+      </table>
+      <p class="dim" style="margin-top:20px;font-size:var(--s-fs-small)">Server regions: Europe (Central European time), NA East (US Eastern), NA West (US Pacific), South America (Brasília) and Japan. Spotted a wrong time? Tell us on <a href="https://discord.gg/mVgms6PWHt" rel="noopener">Discord</a>.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="app-title">
+    <div class="wrap">
+      <div class="split">
+        <div class="prose">
+          <p class="kicker">In the app</p>
+          <h2 id="app-title">Timers that speak — and remember</h2>
+          <ul>
+            <li><strong>Reminders out loud</strong>: “Od energy is full”, the daily reset, Shugo, rifts, Arena — never in the middle of a fight, off until you switch them on.</li>
+            <li><strong>Homework</strong>: daily and weekly tasks per character, Od energy and tickets, cleared by itself at the reset.</li>
+            <li><strong>Field bosses</strong> live from the game, not from a guessed schedule.</li>
+          </ul>
+          <p>Next to the <a href="aion-2-dps-meter.html">DPS meter</a> and the <a href="aion-2-boss-mod.html">boss mod</a>, in a browser or on a <a href="aion-2-xeneon-edge.html">Xeneon Edge</a>.</p>
+        </div>
+        <figure class="shot">
+          <div class="shot__device">
+            <a class="zoom only-elyos" href="assets/img/detail-progress-elyos.webp" title="Open full size"><img src="assets/img/detail-progress-elyos.webp" width="1280" height="352" loading="lazy" alt="AION 2 homework tracker with daily tasks and Od energy, World timers counting down to Shugo Festival and Dimensional Invasion, and Kinah for the session. Demo data."></a>
+            <a class="zoom only-asmodian" href="assets/img/detail-progress-asmodian.webp" title="Open full size"><img src="assets/img/detail-progress-asmodian.webp" width="1280" height="352" loading="lazy" alt="Homework, World timers and Kinah in the Asmodian look. Demo data."></a>
+          </div>
+          <figcaption><span class="chip">Demo data</span>&nbsp; Homework, World and Kinah in the app.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div>
+        <p><strong>A2Naki Companion</strong> — free, no account, no telemetry.</p>
+        <p>Made by players, for players.</p>
+        <p>Dungeon boss guides: <a href="aion-2-krao-cave-guide.html">Krao Cave</a> · <a href="aion-2-draupnir-cave-guide.html">Draupnir Cave</a> · <a href="aion-2-fire-temple-guide.html">Fire Temple</a> · <a href="aion-2-urugugu-canyon-guide.html">Urugugu Canyon</a> · <a href="aion-2-vakron-sky-island-guide.html">Vakron Sky Island</a></p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Boss mechanics</a>
+        <a href="aion-2-boss-mod.html">Boss mod</a>
+        <a href="aion-2-dps-meter.html">DPS meter</a>
+        <a href="aion-2-build-min-max.html">Build &amp; min-max</a>
+        <a href="aion-2-timers.html" aria-current="page">Timers</a>
+        <a href="aion-2-xeneon-edge.html">Xeneon Edge</a>
+        <a href="faq.html">FAQ</a>
+        <a href="beta.html">Beta</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+    <div class="legal">
+      <p>AION 2 is a trademark of NCSOFT Corporation. Corsair, iCUE and Xeneon are trademarks of Corsair. A2Naki Companion is an independent fan project, not affiliated with or endorsed by NCSOFT or Corsair.</p>
+      <p>Icons from <a href="https://game-icons.net">game-icons.net</a> by Lorc, Delapouite and contributors, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>; class icons drawn for A2Naki. Fonts: <a href="assets/fonts/OFL-cinzel.txt">Cinzel</a> and <a href="assets/fonts/OFL-jost.txt">Jost</a>, SIL Open Font License 1.1. Screenshots and clips show demo data only.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/schedule.js"></script>
+<script src="assets/a2-time.js"></script>
+<script src="assets/timers.js"></script>
+</body>
+</html>

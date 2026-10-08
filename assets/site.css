@@ -472,3 +472,120 @@ h3 { font-size: var(--s-fs-h3); letter-spacing: .06em; margin-bottom: .5em; }
 /* TEMP logo (2026-10-04): the app icon as an image mark until the real logo is ready */
 .brand__mark--img::before { display: none; }
 .brand__mark--img img { width: 38px; height: 38px; border-radius: 9px; display: block; }
+
+/* ==========================================================================
+   Guide pages (2026-10-08, SEO): boss mechanics hub + dungeon guides, DPS meter,
+   boss mod, build & min-max, timers, Xeneon Edge. Same visual language as above.
+   ========================================================================== */
+.i-flame { --icon: url("icons/flame.svg"); }
+.i-skeleton-key { --icon: url("icons/skeleton-key.svg"); }
+.i-crossed-swords { --icon: url("icons/crossed-swords.svg"); }
+.i-podium { --icon: url("icons/podium.svg"); }
+.i-medal { --icon: url("icons/medal.svg"); }
+.i-enrage { --icon: url("icons/enrage.svg"); }
+.i-explosion-rays { --icon: url("icons/explosion-rays.svg"); }
+.i-minions { --icon: url("icons/minions.svg"); }
+.i-skull { --icon: url("icons/skull-crossed-bones.svg"); }
+.i-broken-shield { --icon: url("icons/broken-shield.svg"); }
+.i-knockout { --icon: url("icons/knockout.svg"); }
+.i-fire-spell { --icon: url("icons/fire-spell-cast.svg"); }
+.i-spiral-bloom { --icon: url("icons/spiral-bloom.svg"); }
+
+/* Header with more links: tighter on small screens */
+@media (max-width: 900px) { .nav a { padding: 0 10px; } }
+
+/* Breadcrumb */
+.crumbs { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 0 0 18px; padding: 0; list-style: none; font-size: var(--s-fs-small); color: var(--a2-dim); }
+.crumbs li + li::before { content: "›"; margin-right: 10px; color: var(--a2-gold); }
+.crumbs a { color: var(--a2-dim); }
+.crumbs a:hover { color: var(--a2-text); }
+
+/* Link cards (dungeons, other guides) */
+.cards { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+.cards > li { display: flex; }
+.card { position: relative; display: flex; flex-direction: column; gap: 10px; width: 100%; padding: 24px 22px 22px; background: var(--s-card); border: 1px solid var(--a2-hair); color: var(--a2-text); text-decoration: none; transition: transform 240ms var(--s-ease), border-color 200ms, box-shadow 240ms; }
+.card::before { content: ""; position: absolute; top: -1px; left: 0; right: 0; height: 2px; background: var(--a2-rim); }
+.card::after { content: ""; position: absolute; top: -5px; left: 22px; width: 9px; height: 9px; background: var(--a2-gold); transform: rotate(45deg); }
+a.card:hover, a.card:focus-visible { color: var(--a2-text); transform: translateY(-4px); border-color: var(--a2-ring); box-shadow: 0 18px 40px -20px rgba(0,0,0,.8), 0 0 30px -12px var(--a2-halo); }
+.card .ic { width: 40px; height: 40px; color: var(--a2-glow); filter: var(--a2-icon-glow); }
+.card h3 { margin: 0; font-size: 1.125rem; color: var(--a2-title); }
+.card p { margin: 0; color: var(--a2-dim); font-size: var(--s-fs-small); line-height: 1.55; }
+.card__meta { margin-top: auto; padding-top: 8px; font-size: .8125rem; letter-spacing: .12em; text-transform: uppercase; color: var(--a2-gold-text); }
+
+/* A spoken call, as the app says it */
+.say { display: inline-block; padding: 0 9px; border: 1px solid var(--a2-gold); font-family: var(--a2-font-title); font-weight: 600; font-size: .875em; letter-spacing: .03em; color: var(--a2-gold-text); }
+.say::before { content: "\201C"; } .say::after { content: "\201D"; }
+
+/* Difficulty tags */
+.tag { display: inline-block; padding: 0 8px; margin-right: 6px; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; border: 1px solid var(--a2-ring); color: var(--a2-title); vertical-align: 2px; }
+.tag--hard { border-color: var(--a2-warn); color: var(--a2-warn); }
+.tag--soft { border-style: dashed; color: var(--a2-dim); }
+
+/* A boss on a dungeon guide page */
+.boss { margin-top: clamp(48px, 6vw, 72px); }
+.boss__head { display: flex; align-items: center; gap: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--a2-gold); }
+.boss__head .ic { width: 44px; height: 44px; flex: none; color: var(--a2-glow); filter: var(--a2-icon-glow); }
+.boss__head h2 { margin: 0; font-size: clamp(1.4rem, 1.1rem + 1.1vw, 1.9rem); }
+.boss__head p { margin: 4px 0 0; color: var(--a2-dim); font-size: var(--s-fs-small); }
+.boss > p { margin: 18px 0 0; color: var(--a2-dim); }
+.mech { list-style: none; margin: 0; padding: 0; }
+.mech li { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--s-line); }
+.mech .ic { width: 28px; height: 28px; margin-top: 2px; color: var(--a2-title); }
+.mech h3 { margin: 0 0 .35em; font-size: 1.0625rem; letter-spacing: .04em; color: var(--a2-text); }
+.mech p { margin: 0 0 .5em; color: var(--a2-dim); }
+.mech p:last-child { margin-bottom: 0; }
+.mech .do { color: var(--a2-text); }
+.mech .do b { color: var(--a2-gold-text); font-weight: 500; }
+
+/* Cheat sheet table: a table on wide screens, stacked rows on phones */
+.sheet { width: 100%; margin-top: 32px; border-collapse: collapse; font-size: var(--s-fs-small); }
+.sheet th, .sheet td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--s-line); }
+.sheet th { font-family: var(--a2-font-title); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; font-size: .75rem; color: var(--a2-title); border-bottom-color: var(--a2-gold); }
+.sheet td { color: var(--a2-dim); }
+.sheet td:first-child { color: var(--a2-text); font-weight: 500; }
+.sheet td a { color: var(--a2-text); }
+.sheet tbody tr:hover td { background: var(--s-card-flat); }
+@media (max-width: 720px) {
+  .sheet thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .sheet, .sheet tbody, .sheet tr, .sheet td { display: block; width: 100%; }
+  .sheet tr { padding: 12px 0; border-bottom: 1px solid var(--s-line); }
+  .sheet td { padding: 2px 0; border: 0; }
+  .sheet td[data-h]::before { content: attr(data-h) ": "; color: var(--a2-title); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+}
+
+/* Mechanic types (glossary) */
+.kinds { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 0 40px; margin-top: 32px; }
+.kinds > div { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 14px; padding: 18px 0; border-top: 1px solid var(--s-line); }
+.kinds .ic { width: 28px; height: 28px; color: var(--a2-glow); filter: var(--a2-icon-glow); }
+.kinds h3 { margin: 0 0 .3em; font-size: 1.0625rem; color: var(--a2-text); }
+.kinds p { margin: 0; color: var(--a2-dim); font-size: var(--s-fs-small); line-height: 1.55; }
+
+/* Live timers */
+.clock { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: 28px; padding: 18px 22px; background: var(--s-card-flat); border: 1px solid var(--a2-hair); }
+.clock label, .clock span { color: var(--a2-dim); font-size: var(--s-fs-small); }
+.clock output { font-variant-numeric: tabular-nums; color: var(--a2-text); font-size: 1.125rem; margin-left: 6px; }
+.clock select { min-height: 44px; margin-left: 8px; padding: 0 12px; font: inherit; color: var(--a2-text); background: var(--a2-surface-solid); border: 1px solid var(--a2-ring); }
+.timers { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 10px; }
+.timer { position: relative; display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 2px 16px; align-items: center; padding: 16px 20px; background: var(--s-card); border: 1px solid var(--a2-hair); overflow: hidden; }
+.timer .ic { width: 30px; height: 30px; grid-row: span 2; color: var(--a2-glow); filter: var(--a2-icon-glow); }
+.timer b { font-weight: 500; color: var(--a2-text); }
+.timer small { grid-column: 2; color: var(--a2-dim); font-size: .8125rem; }
+.timer output { grid-column: 3; grid-row: 1 / span 2; font-family: var(--a2-font-title); font-weight: 600; font-size: 1.25rem; letter-spacing: .04em; font-variant-numeric: tabular-nums; color: var(--a2-title); }
+.timer .bar { position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; transform-origin: left; transform: scaleX(var(--p, 0)); background: var(--a2-glow); box-shadow: 0 0 8px var(--a2-glow); }
+.timer--soon { border-color: var(--a2-gold); }
+.timer--soon output { color: var(--a2-gold-text); }
+@media (max-width: 480px) {
+  .timer { grid-template-columns: 32px minmax(0, 1fr); }
+  .timer .ic { grid-row: span 3; }
+  .timer output { grid-column: 2; grid-row: auto; font-size: 1.125rem; }
+}
+
+/* Two columns: prose + figure */
+.split { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
+@media (max-width: 860px) { .split { grid-template-columns: minmax(0, 1fr); } }
+.note { margin-top: 28px; padding: 16px 18px; border-left: 2px solid var(--a2-gold); background: var(--s-card-flat); font-size: var(--s-fs-small); color: var(--a2-dim); }
+.note p:last-child { margin: 0; }
+.note strong { color: var(--a2-text); }
+.prose ol { margin: 0 0 1.2em; padding-left: 1.4em; color: var(--a2-dim); }
+.prose ol li { margin-bottom: .55em; }
+.prose ol li::marker { color: var(--a2-gold-text); font-family: var(--a2-font-title); }

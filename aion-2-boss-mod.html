@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" data-theme="elyos">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AION 2 Boss Mod — spoken boss-mechanic warnings | A2Naki</title>
+<meta name="description" content="A free boss mod for AION 2: A2Naki Companion calls boss mechanics out loud — Take cover!, Dodge!, Stop attacking — with countdowns, written per boss from real pulls and learned live on new bosses. Passive, nothing sent to the game.">
+<link rel="canonical" href="https://a2naki.github.io/aion-2-boss-mod.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A2Naki Companion">
+<meta property="og:title" content="AION 2 Boss Mod — spoken boss-mechanic warnings">
+<meta property="og:description" content="Boss mechanics called out loud, on time, with countdowns. Free, passive, per boss.">
+<meta property="og:url" content="https://a2naki.github.io/aion-2-boss-mod.html">
+<meta property="og:image" content="https://a2naki.github.io/assets/img/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AION 2 boss mechanics","item":"https://a2naki.github.io/"},{"@type":"ListItem","position":2,"name":"AION 2 boss mod","item":"https://a2naki.github.io/aion-2-boss-mod.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is there a boss mod like DBM for AION 2?","acceptedAnswer":{"@type":"Answer","text":"A2Naki Companion works much like Deadly Boss Mods does in other MMOs: it watches the boss's casts and calls the mechanic out loud with a countdown. It is free and runs next to the game on Windows."}},
+{"@type":"Question","name":"Does the A2Naki boss mod change the game?","acceptedAnswer":{"@type":"Answer","text":"No. It only receives a copy of the data the game server already sends to your PC. It never sends anything to the game, never touches game files or memory and never plays for you. NCSOFT may still see reading game traffic as against the terms of service, so read the safety FAQ first."}},
+{"@type":"Question","name":"Which AION 2 bosses does it know?","acceptedAnswer":{"@type":"Answer","text":"Krao Cave, Draupnir Cave, Fire Temple, Urugugu Canyon and Vakron Sky Island bosses have calls written from recorded pulls. On other bosses it learns group hits, adds, cleanses and interrupts during the fight."}}
+]}</script>
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0d1126">
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="assets/img/brand/a2naki-256.png" type="image/png" sizes="256x256">
+<link rel="apple-touch-icon" href="assets/img/brand/a2naki-256.png">
+<link rel="stylesheet" href="assets/a2-tokens.css">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__in">
+    <a class="brand" href="index.html" aria-label="A2Naki Companion — home">
+      <span class="brand__mark brand__mark--img" aria-hidden="true"><img src="assets/img/brand/a2naki-256.png" width="38" height="38" alt=""></span>
+      <span class="brand__name">A2Naki<small>Companion</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Bosses</a>
+      <a href="aion-2-dps-meter.html">DPS meter</a>
+      <a href="aion-2-timers.html">Timers</a>
+      <a href="faq.html">FAQ</a>
+      <a class="nav__cta" href="beta.html">Beta</a>
+    </nav>
+    <button class="theme-btn" type="button" data-theme-toggle aria-label="Switch faction look"><i class="ic" aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head" aria-labelledby="page-title">
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">Boss mechanics</a></li><li>Boss mod</li></ol>
+      <p class="kicker rise rise--1">Free · A2Naki Companion</p>
+      <h1 id="page-title" class="rise rise--2"><b>AION 2</b> Boss Mod</h1>
+      <p class="lead rise rise--3">Boss mechanics, called out loud and on time — like the boss mods you know from other MMOs, written for AION 2 from real pulls.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(40px,5vw,64px)" aria-labelledby="what-title">
+    <div class="wrap">
+      <div class="split">
+        <div class="prose">
+          <h2 id="what-title">What you hear</h2>
+          <p>When the boss starts a mechanic, a voice says what to do — <span class="say">Take cover!</span>, <span class="say">Dodge!</span>, <span class="say">Kill Flower!</span>, <span class="say">Kael marked, move to Kael!</span> — and the same line shows under the boss HP with a countdown to when it lands. Wipe checks count down the time left: <span class="say">Break the gauge with stagger skills!</span></p>
+          <p>Where the boss gives it away early — a cast, a debuff on a player, an HP mark — the warning comes early too: <span class="say">Stop DPS soon!</span>, <span class="say">Interrupt Berk Slam soon</span>.</p>
+          <p>And when the kill projection shows the boss will outlive its enrage timer: <span class="say">Enrage before kill – burst now!</span></p>
+        </div>
+        <figure class="shot shot--tilt">
+          <div class="shot__device">
+            <div class="motion only-elyos" data-motion>
+              <video class="motion__v" width="1690" height="697" muted loop playsinline preload="none" poster="assets/img/detail-encounter-elyos.webp"
+                     aria-label="The boss card while the boss mod warns: an ‘Interrupt Berk Slam soon’ warning, the cast bar filling, then ‘Cleanse Kael!’, the kill projection and the stagger gauge. Demo data.">
+                <source data-src="assets/video/encounter-elyos.webm" type="video/webm">
+                <source data-src="assets/video/encounter-elyos.mp4" type="video/mp4">
+              </video>
+              <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
+            </div>
+            <div class="motion only-asmodian" data-motion>
+              <video class="motion__v" width="1690" height="697" muted loop playsinline preload="none" poster="assets/img/detail-encounter-asmodian.webp"
+                     aria-label="The boss card in the Asmodian look while the boss mod warns. Demo data.">
+                <source data-src="assets/video/encounter-asmodian.webm" type="video/webm">
+                <source data-src="assets/video/encounter-asmodian.mp4" type="video/mp4">
+              </video>
+              <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
+            </div>
+          </div>
+          <figcaption><span class="chip">Demo data</span>&nbsp; The warning line, the cast bar and the kill projection.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="how-title">
+    <div class="wrap">
+      <p class="kicker">How it knows</p>
+      <h2 id="how-title">Written per boss, learned on the rest</h2>
+      <div class="kinds">
+        <div><i class="ic i-scroll-unfurled" aria-hidden="true"></i><div><h3>Written from real pulls</h3><p>For the bosses in our <a href="index.html#dungeons">dungeon guides</a> each call is tied to the cast that starts the mechanic, with the seconds we measured in recorded fights — Exploration and Conquest separately.</p></div></div>
+        <div><i class="ic i-spell-book" aria-hidden="true"></i><div><h3>Learned in the fight</h3><p>On a boss it has never seen, it still finds group hits, adds, debuffs a healer must cleanse and casts worth interrupting — and remembers them for the next pull.</p></div></div>
+        <div><i class="ic i-knockout" aria-hidden="true"></i><div><h3>Stagger and interrupts</h3><p>The stagger gauge is on the boss card all fight, and the interruptible cast that comes next is called ahead: <span class="say">Interrupt … soon</span>.</p></div></div>
+        <div><i class="ic i-histogram" aria-hidden="true"></i><div><h3>Count boss casts</h3><p>For learning a new boss: every spell gets a number the first time — 1, 2, 3 — and the voice says it each time it comes. Tell us “3 should say Get out” and the next version does.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="set-title">
+    <div class="wrap wrap--narrow">
+      <div class="prose">
+        <p class="kicker">Your choice</p>
+        <h2 id="set-title">Set it up the way you raid</h2>
+        <ul>
+          <li><strong>Voice on or off</strong>, volume and speed — the countdown on the training dummy follows the same volume.</li>
+          <li><strong>How many seconds ahead</strong> the early warnings come.</li>
+          <li><strong>One switch per kind</strong>: interrupt, stagger, wipe check, group damage, targeted, adds, cleanse, take cover, fire walls, stop attacking, enrage and orbs.</li>
+          <li><strong>Where it shows</strong>: the boss card on a Xeneon Edge, in any browser, or at the top of the meter overlay in the game.</li>
+        </ul>
+        <p>The dashboard speaks ten languages; the spoken boss warnings are in English.</p>
+      </div>
+      <div class="note">
+        <p><strong>Passive, read-only.</strong> The boss mod only receives a copy of what the game server already sends to your PC. It never sends anything to the game, never reads its memory and never plays for you. NCSOFT may still see reading game traffic as against the AION 2 terms of service — read <a href="faq.html#safe">Is it safe?</a> before you decide.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="q-title">
+    <div class="wrap wrap--narrow">
+      <p class="kicker">Questions</p>
+      <h2 id="q-title">Boss mod FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary><i class="ic i-alarm-clock" aria-hidden="true"></i>Is there a boss mod like DBM for AION 2?</summary>
+          <div class="faq__a"><p>A2Naki Companion works much like Deadly Boss Mods does in other MMOs: it watches the boss’s casts and calls the mechanic out loud with a countdown. It is free and runs next to the game on Windows 10 and 11.</p></div>
+        </details>
+        <details>
+          <summary><i class="ic i-shield" aria-hidden="true"></i>Does it change the game?</summary>
+          <div class="faq__a"><p>No. It only receives a copy of the data the game server already sends to your PC — no injection, no memory reading, no automation. The risk that NCSOFT sees it as against the terms of service is still real; see <a href="faq.html#safe">Is it safe?</a></p></div>
+        </details>
+        <details>
+          <summary><i class="ic i-dragon-head" aria-hidden="true"></i>Which bosses does it know?</summary>
+          <div class="faq__a"><p>The bosses of <a href="aion-2-krao-cave-guide.html">Krao Cave</a>, <a href="aion-2-draupnir-cave-guide.html">Draupnir Cave</a>, <a href="aion-2-fire-temple-guide.html">Fire Temple</a>, <a href="aion-2-urugugu-canyon-guide.html">Urugugu Canyon</a> and <a href="aion-2-vakron-sky-island-guide.html">Vakron Sky Island</a> have written calls. On the others it learns as you fight, and every recorded pull you share makes the next version better.</p></div>
+        </details>
+        <details>
+          <summary><i class="ic i-histogram" aria-hidden="true"></i>Does it come with a DPS meter?</summary>
+          <div class="faq__a"><p>Yes — the same app is a full <a href="aion-2-dps-meter.html">AION 2 DPS meter</a> for the whole party, with training on the dummy and <a href="aion-2-timers.html">world timers</a>.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="frame"><div class="frame__body">
+        <span class="orn orn--t" aria-hidden="true"></span><span class="orn orn--b" aria-hidden="true"></span>
+        <span class="cta__halo" aria-hidden="true"></span>
+        <div>
+          <p class="kicker">Beta · on Discord</p>
+          <h2 id="cta-title">Try the boss mod</h2>
+          <p>The beta runs on our Discord: download it there, run a dungeon and tell us which call came too late.</p>
+        </div>
+        <div class="cta__act">
+          <a class="btn btn--primary" href="https://discord.gg/mVgms6PWHt" rel="noopener" target="_blank">Join the A2Naki Discord</a>
+          <small><a href="beta.html">What we ask, and the risks</a></small>
+        </div>
+      </div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div>
+        <p><strong>A2Naki Companion</strong> — free, no account, no telemetry.</p>
+        <p>Made by players, for players.</p>
+        <p>Dungeon boss guides: <a href="aion-2-krao-cave-guide.html">Krao Cave</a> · <a href="aion-2-draupnir-cave-guide.html">Draupnir Cave</a> · <a href="aion-2-fire-temple-guide.html">Fire Temple</a> · <a href="aion-2-urugugu-canyon-guide.html">Urugugu Canyon</a> · <a href="aion-2-vakron-sky-island-guide.html">Vakron Sky Island</a></p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Boss mechanics</a>
+        <a href="aion-2-boss-mod.html" aria-current="page">Boss mod</a>
+        <a href="aion-2-dps-meter.html">DPS meter</a>
+        <a href="aion-2-build-min-max.html">Build &amp; min-max</a>
+        <a href="aion-2-timers.html">Timers</a>
+        <a href="aion-2-xeneon-edge.html">Xeneon Edge</a>
+        <a href="faq.html">FAQ</a>
+        <a href="beta.html">Beta</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+    <div class="legal">
+      <p>AION 2 is a trademark of NCSOFT Corporation. Corsair, iCUE and Xeneon are trademarks of Corsair. A2Naki Companion is an independent fan project, not affiliated with or endorsed by NCSOFT or Corsair.</p>
+      <p>Icons from <a href="https://game-icons.net">game-icons.net</a> by Lorc, Delapouite and contributors, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>; class icons drawn for A2Naki. Fonts: <a href="assets/fonts/OFL-cinzel.txt">Cinzel</a> and <a href="assets/fonts/OFL-jost.txt">Jost</a>, SIL Open Font License 1.1. Screenshots and clips show demo data only.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

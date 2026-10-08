@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" data-theme="elyos">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AION 2 Build Guide: min-max your DPS | A2Naki</title>
+<meta name="description" content="How to min-max an AION 2 build: test it on the training dummy, change one thing, and compare two runs down to the gear slot, rotation, crit rate and buff uptime — a practical guide with the free A2Naki DPS meter.">
+<link rel="canonical" href="https://a2naki.github.io/aion-2-build-min-max.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="A2Naki Companion">
+<meta property="og:title" content="AION 2 Build Guide: test &amp; min-max your DPS on the dummy">
+<meta property="og:description" content="Change one thing, run the dummy, compare — and know which gear piece or skill moved your DPS.">
+<meta property="og:url" content="https://a2naki.github.io/aion-2-build-min-max.html">
+<meta property="og:image" content="https://a2naki.github.io/assets/img/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AION 2 boss mechanics","item":"https://a2naki.github.io/"},{"@type":"ListItem","position":2,"name":"Build & min-max","item":"https://a2naki.github.io/aion-2-build-min-max.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to test and min-max an AION 2 build on the training dummy","tool":[{"@type":"HowToTool","name":"A2Naki Companion (free)"}],"step":[
+{"@type":"HowToStep","name":"Pick a run length","text":"Hit a Punching Bag or a Training Scarecrow and choose a length from 30 seconds to 5 minutes. The clock starts on your first hit."},
+{"@type":"HowToStep","name":"Set a baseline","text":"Do three to five runs with your current build. The card shows the average of your last five runs and how much they spread."},
+{"@type":"HowToStep","name":"Change one thing","text":"Swap one gear piece, one stigma or skill upgrade, or one step of your rotation. After a gear swap, change zone once so the game sends your new stats."},
+{"@type":"HowToStep","name":"Run again","text":"Do the same number of runs of the same length, with the same buffs."},
+{"@type":"HowToStep","name":"Compare","text":"Open the Analysis page, put two runs side by side and read what changed: DPS over the run, rotation per skill, crit and back-attack rates, buff uptime and the gear slot you swapped."}
+]}</script>
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0d1126">
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="assets/img/brand/a2naki-256.png" type="image/png" sizes="256x256">
+<link rel="apple-touch-icon" href="assets/img/brand/a2naki-256.png">
+<link rel="stylesheet" href="assets/a2-tokens.css">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__in">
+    <a class="brand" href="index.html" aria-label="A2Naki Companion — home">
+      <span class="brand__mark brand__mark--img" aria-hidden="true"><img src="assets/img/brand/a2naki-256.png" width="38" height="38" alt=""></span>
+      <span class="brand__name">A2Naki<small>Companion</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Bosses</a>
+      <a href="aion-2-dps-meter.html">DPS meter</a>
+      <a href="aion-2-timers.html">Timers</a>
+      <a href="faq.html">FAQ</a>
+      <a class="nav__cta" href="beta.html">Beta</a>
+    </nav>
+    <button class="theme-btn" type="button" data-theme-toggle aria-label="Switch faction look"><i class="ic" aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head" aria-labelledby="page-title">
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">Boss mechanics</a></li><li>Build &amp; min-max</li></ol>
+      <p class="kicker rise rise--1">AION 2 build guide</p>
+      <h1 id="page-title" class="rise rise--2"><b>Min-max</b> your AION 2 build</h1>
+      <p class="lead rise rise--3">Build guides tell you what should be best. The training dummy tells you what is best — for your gear, your class and your hands.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(40px,5vw,64px)" aria-labelledby="steps-title">
+    <div class="wrap">
+      <div class="split">
+        <div class="prose">
+          <h2 id="steps-title">Test a build in five steps</h2>
+          <ol>
+            <li><strong>Pick a run length.</strong> Hit a Punching Bag or a Training Scarecrow and the target card becomes a training card: choose 30 seconds to 5 minutes. The clock starts on your first hit.</li>
+            <li><strong>Set a baseline.</strong> Do three to five runs with what you have now. The card shows the average of your last five and how much they spread.</li>
+            <li><strong>Change one thing.</strong> One gear piece, one stigma, one skill upgrade, one step of the rotation. After a gear swap, change zone once — the game sends your new stats then.</li>
+            <li><strong>Run again</strong> — same length, same buffs, same number of runs.</li>
+            <li><strong>Compare.</strong> On the Analysis page, put two runs side by side. The rows that differ are marked, down to the gear slot you swapped. Give runs a label (“new gloves”) and compare the labels’ averages.</li>
+          </ol>
+        </div>
+        <figure class="shot shot--tilt">
+          <div class="shot__device">
+            <a class="zoom only-elyos" href="assets/img/analysis-training-elyos.webp" title="Open full size"><img src="assets/img/analysis-training-elyos.webp" loading="lazy" alt="Two training runs compared on the Analysis page: DPS over the run for A and B, combat power, item level, stats, buffs, the gear slot that changed and the rotation of each skill. Demo data."></a>
+            <a class="zoom only-asmodian" href="assets/img/analysis-training-asmodian.webp" title="Open full size"><img src="assets/img/analysis-training-asmodian.webp" loading="lazy" alt="Two training runs compared on the Analysis page, Asmodian look. Demo data."></a>
+          </div>
+          <figcaption><span class="chip">Demo data</span>&nbsp; Two runs side by side, the swapped gear slot marked.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="read-title">
+    <div class="wrap">
+      <p class="kicker">What to read</p>
+      <h2 id="read-title">Where the DPS actually goes</h2>
+      <div class="kinds">
+        <div><i class="ic i-histogram" aria-hidden="true"></i><div><h3>Opener vs the rest</h3><p>Your first 10 seconds against everything after. A strong opener with a weak tail is a cooldown problem, not a gear problem.</p></div></div>
+        <div><i class="ic i-hourglass" aria-hidden="true"></i><div><h3>Idle time and unused skills</h3><p>The card tells you while you hit: “2 s without a skill”, “Skill ready for 4 s”. The rotation chart shows every gap where a skill was ready and not used.</p></div></div>
+        <div><i class="ic i-trophy" aria-hidden="true"></i><div><h3>Crit and back attacks</h3><p>Crit rate and back-attack rate per run, so a stat change and a positioning habit can be told apart.</p></div></div>
+        <div><i class="ic i-spell-book" aria-hidden="true"></i><div><h3>Buff uptime</h3><p>How much of the run each of your buffs was up. A buff that drops off mid-run costs more than most gear upgrades.</p></div></div>
+        <div><i class="ic i-anvil" aria-hidden="true"></i><div><h3>Gear, slot by slot</h3><p>Combat power, item level, stats and every gear slot are saved with each run — the last 100 per character.</p></div></div>
+        <div><i class="ic i-medal" aria-hidden="true"></i><div><h3>Your run vs your best</h3><p>While you hit, your DPS is drawn against your last run and your best at the same second, so you know mid-run if it is going well.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="rules-title">
+    <div class="wrap wrap--narrow">
+      <div class="prose">
+        <p class="kicker">Min-max rules</p>
+        <h2 id="rules-title">Five rules that keep the numbers honest</h2>
+        <ul>
+          <li><strong>One change at a time.</strong> Two changes at once and you can’t tell which one helped.</li>
+          <li><strong>Same length every time.</strong> A 30-second run rewards your opener; a 3-minute run shows your sustain. Pick the one that matches the content you play.</li>
+          <li><strong>Beat the spread, not just the number.</strong> If the new average is up 2 % but your runs spread ±4 %, that is noise. Do more runs.</li>
+          <li><strong>Same buffs.</strong> A party buff or food on one run and not the other ruins the test — the buffs of each run are saved, check them.</li>
+          <li><strong>Then test it on a boss.</strong> The dummy doesn’t move or make you dodge. <a href="index.html">Boss mechanics</a> are where a rotation breaks; the <a href="aion-2-dps-meter.html">DPS meter</a> shows if it holds in a real pull.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="q-title">
+    <div class="wrap wrap--narrow">
+      <p class="kicker">Questions</p>
+      <h2 id="q-title">Build FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary><i class="ic i-trophy" aria-hidden="true"></i>What is the best build in AION 2?</summary>
+          <div class="faq__a"><p>It depends on your class, your gear and the content. A build guide is a good starting point; the dummy tells you whether a change actually raised your DPS. Test, keep what wins, repeat.</p></div>
+        </details>
+        <details>
+          <summary><i class="ic i-hourglass" aria-hidden="true"></i>Which dummies count as training?</summary>
+          <div class="faq__a"><p>Punching Bags and Training Scarecrows, the melee one too. See <a href="faq.html#training">How do I practise my rotation?</a> in the FAQ.</p></div>
+        </details>
+        <details>
+          <summary><i class="ic i-anvil" aria-hidden="true"></i>Why are my stats the same after a gear swap?</summary>
+          <div class="faq__a"><p>The game sends your stats when you log in or change zone, not when you swap gear. Change zone once after swapping, then run.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="frame"><div class="frame__body">
+        <span class="orn orn--t" aria-hidden="true"></span><span class="orn orn--b" aria-hidden="true"></span>
+        <span class="cta__halo" aria-hidden="true"></span>
+        <div>
+          <p class="kicker">Beta · on Discord</p>
+          <h2 id="cta-title">Put your build to the test</h2>
+          <p>Training mode, run comparison and the Analysis page are in the A2Naki beta, free, on our Discord.</p>
+        </div>
+        <div class="cta__act">
+          <a class="btn btn--primary" href="https://discord.gg/mVgms6PWHt" rel="noopener" target="_blank">Join the A2Naki Discord</a>
+          <small><a href="beta.html">What we ask, and the risks</a></small>
+        </div>
+      </div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div>
+        <p><strong>A2Naki Companion</strong> — free, no account, no telemetry.</p>
+        <p>Made by players, for players.</p>
+        <p>Dungeon boss guides: <a href="aion-2-krao-cave-guide.html">Krao Cave</a> · <a href="aion-2-draupnir-cave-guide.html">Draupnir Cave</a> · <a href="aion-2-fire-temple-guide.html">Fire Temple</a> · <a href="aion-2-urugugu-canyon-guide.html">Urugugu Canyon</a> · <a href="aion-2-vakron-sky-island-guide.html">Vakron Sky Island</a></p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Boss mechanics</a>
+        <a href="aion-2-boss-mod.html">Boss mod</a>
+        <a href="aion-2-dps-meter.html">DPS meter</a>
+        <a href="aion-2-build-min-max.html" aria-current="page">Build &amp; min-max</a>
+        <a href="aion-2-timers.html">Timers</a>
+        <a href="aion-2-xeneon-edge.html">Xeneon Edge</a>
+        <a href="faq.html">FAQ</a>
+        <a href="beta.html">Beta</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+    <div class="legal">
+      <p>AION 2 is a trademark of NCSOFT Corporation. Corsair, iCUE and Xeneon are trademarks of Corsair. A2Naki Companion is an independent fan project, not affiliated with or endorsed by NCSOFT or Corsair.</p>
+      <p>Icons from <a href="https://game-icons.net">game-icons.net</a> by Lorc, Delapouite and contributors, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>; class icons drawn for A2Naki. Fonts: <a href="assets/fonts/OFL-cinzel.txt">Cinzel</a> and <a href="assets/fonts/OFL-jost.txt">Jost</a>, SIL Open Font License 1.1. Screenshots and clips show demo data only.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

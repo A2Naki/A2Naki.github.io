@@ -3,20 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A2Naki Companion — AION 2 DPS meter, boss warnings &amp; timers</title>
-<meta name="description" content="Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, training on the dummy with run comparison, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge.">
+<title>AION 2 Boss Mechanics — dungeon guide &amp; boss mod | A2Naki</title>
+<meta name="description" content="AION 2 boss mechanics for every dungeon boss we have recorded — Krao Cave, Draupnir Cave, Fire Temple, Urugugu Canyon and Vakron Sky Island — and a free boss mod that calls them out loud in time.">
 <link rel="canonical" href="https://a2naki.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="A2Naki Companion">
-<meta property="og:title" content="A2Naki Companion — AION 2 DPS meter, boss warnings &amp; timers">
-<meta property="og:description" content="Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, training on the dummy with run comparison, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge.">
+<meta property="og:title" content="AION 2 Boss Mechanics — dungeon boss guide &amp; spoken warnings">
+<meta property="og:description" content="AION 2 boss mechanics for every dungeon boss we have recorded, and a free boss mod that calls them out loud in time.">
 <meta property="og:url" content="https://a2naki.github.io/">
 <meta property="og:image" content="https://a2naki.github.io/assets/img/og-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="A2Naki Companion — a live DPS meter and dashboard for AION 2">
+<meta property="og:image:alt" content="A2Naki Companion — AION 2 boss mechanics, spoken warnings and a live DPS meter">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A2Naki Companion","url":"https://a2naki.github.io/","image":"https://a2naki.github.io/assets/img/og-card.jpg","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free AION 2 DPS meter and live dashboard: rDPS, boss HP with spoken warnings, training on the dummy with run comparison, party buffs, Kinah per hour and world timers — in a browser, an overlay or on a Xeneon Edge."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"A2Naki Companion","url":"https://a2naki.github.io/","description":"AION 2 boss mechanics, dungeon boss guides and a free boss mod with spoken warnings."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A2Naki Companion","url":"https://a2naki.github.io/","image":"https://a2naki.github.io/assets/img/og-card.jpg","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free AION 2 companion: spoken boss-mechanic warnings, a live DPS meter, training on the dummy and world timers — in a browser, an overlay or on a Xeneon Edge."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What are the boss mechanics in AION 2?","acceptedAnswer":{"@type":"Answer","text":"AION 2 dungeon bosses mix a few kinds of mechanics: ground zones and orbs to step out of, group hits you hide from behind objects, wipe checks where the party must break the boss's stagger gauge in time, reflect or counter stances where you stop attacking, adds to kill, players marked or targeted, and an enrage timer."}},
+{"@type":"Question","name":"Is there a boss mod for AION 2?","acceptedAnswer":{"@type":"Answer","text":"A2Naki Companion is a free boss mod for AION 2: it reads the boss casts the game already sends to your PC and says short warnings out loud, such as Take cover!, Dodge! or Stop attacking, ahead of time where the boss gives it away. It never sends anything to the game."}}
+]}</script>
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0d1126">
 <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
@@ -37,9 +42,10 @@
       <span class="brand__name">A2Naki<small>Companion</small></span>
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="index.html" aria-current="page">Home</a>
+      <a href="index.html" aria-current="page">Bosses</a>
+      <a href="aion-2-dps-meter.html">DPS meter</a>
+      <a href="aion-2-timers.html">Timers</a>
       <a href="faq.html">FAQ</a>
-      <a href="privacy.html">Privacy</a>
       <a class="nav__cta" href="beta.html">Beta</a>
     </nav>
     <button class="theme-btn" type="button" data-theme-toggle aria-label="Switch faction look"><i class="ic" aria-hidden="true"></i></button>
@@ -52,23 +58,22 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero__aether" aria-hidden="true"><i></i><i></i><i></i></div>
     <div class="wrap hero__text">
-      <p class="kicker rise rise--1">Free fan project · for AION 2</p>
-      <h1 id="hero-title" class="rise rise--2"><b>A2Naki</b> Companion<span>A live DPS meter and dashboard for AION 2</span></h1>
-      <p class="lead rise rise--3">On any browser, a Corsair Xeneon Edge or right on top of the game: your fight, your party and your progress at a glance — so your eyes stay on the game.</p>
+      <p class="kicker rise rise--1">Dungeon boss guide · from real pulls</p>
+      <h1 id="hero-title" class="rise rise--2"><b>AION 2</b> Boss Mechanics<span>Know the call before the boss makes it</span></h1>
+      <p class="lead rise rise--3">What every dungeon boss does, when it does it and what to do about it — written from our own recorded fights. Then let the free A2Naki boss mod say it out loud, right on time.</p>
       <div class="hero__cta rise rise--4">
-        <a class="btn btn--primary" href="https://discord.gg/mVgms6PWHt" rel="noopener" target="_blank">Get the beta on Discord</a>
-        <a class="btn" href="#how">How it works</a>
+        <a class="btn btn--primary" href="#dungeons">Dungeon boss guides</a>
+        <a class="btn" href="aion-2-boss-mod.html">The boss mod</a>
       </div>
-      <p class="hero__note rise rise--4">Windows 10 / 11 · AION 2 Global</p>
+      <p class="hero__note rise rise--4">Krao Cave · Draupnir Cave · Fire Temple · Urugugu Canyon · Vakron Sky Island</p>
     </div>
 
     <figure class="edge rise rise--4">
       <div class="edge__device">
-        <!-- Moving demos (8 s loops, demo data): WebM VP9 + MP4 H.264, the still screenshot as poster. site.js loads a clip only
-             when it is on screen and in the current faction look, never autoplays with prefers-reduced-motion (play button). -->
+        <!-- Moving demos (8 s loops, demo data): see site.js -->
         <div class="motion only-elyos" data-motion>
           <video class="motion__v" width="2537" height="697" muted loop playsinline preload="none" poster="assets/img/edge-elyos.webp"
-                 aria-label="The AION 2 dashboard on a Corsair Xeneon Edge, page 1, Elyos look, moving: the Encounter with Enraged Reda at 70 percent HP, an ‘Interrupt Berk Slam soon’ warning, the cast bar filling, then ‘Cleanse Kael!’, the kill projection against your best, the damage meter with rDPS, the Cleric buff timers and the Party card with a low-HP alert. Demo data.">
+                 aria-label="A boss fight in AION 2 with A2Naki: Enraged Reda at 70 percent HP, an ‘Interrupt Berk Slam soon’ warning, the cast bar filling, then ‘Cleanse Kael!’, the kill projection against your best, the damage meter, buff timers and the Party card. Demo data.">
             <source data-src="assets/video/hero-elyos.webm" type="video/webm">
             <source data-src="assets/video/hero-elyos.mp4" type="video/mp4">
           </video>
@@ -76,7 +81,7 @@
         </div>
         <div class="motion only-asmodian" data-motion>
           <video class="motion__v" width="2537" height="697" muted loop playsinline preload="none" poster="assets/img/edge-asmodian.webp"
-                 aria-label="The same page 1 in the Asmodian look, moving: Encounter with warnings and a filling cast bar, damage meter, Cleric buff timers and Party. Demo data.">
+                 aria-label="The same boss fight in the Asmodian look: warnings, a filling cast bar, the damage meter, buff timers and Party. Demo data.">
             <source data-src="assets/video/hero-asmodian.webm" type="video/webm">
             <source data-src="assets/video/hero-asmodian.mp4" type="video/mp4">
           </video>
@@ -84,186 +89,159 @@
         </div>
       </div>
       <div class="edge__stand" aria-hidden="true"></div>
-      <figcaption class="edge__cap"><span class="chip">Demo data</span><span>Page 1 · Group, exactly as it runs on the 2560 × 720 Edge. Tap the wing to see the other faction.</span></figcaption>
+      <figcaption class="edge__cap"><span class="chip">Demo data</span><span>The warning line, the cast bar and the kill projection, as the boss mod shows them.</span></figcaption>
     </figure>
   </section>
 
-  <!-- ============ WHAT IT SHOWS ============ -->
-  <section class="section" id="features" aria-labelledby="features-title">
+  <!-- ============ DUNGEONS ============ -->
+  <section class="section" id="dungeons" aria-labelledby="dungeons-title">
     <div class="wrap">
-      <h2 id="features-title" class="kicker">What it shows: DPS meter, boss warnings, training, party &amp; timers</h2>
-      <p class="lead reveal">One screen per situation — in a fight, between fights, and on the long road of dailies. Every number comes from the game itself; if something isn’t known, it says so instead of guessing.</p>
+      <p class="kicker">Dungeon boss guides</p>
+      <h2 id="dungeons-title" class="reveal">Every boss, mechanic by mechanic</h2>
+      <p class="lead reveal">One page per dungeon, Exploration and Conquest side by side. Each mechanic says what you see, how long you have and what to do.</p>
+      <ul class="cards">
+        <li><a class="card reveal" href="aion-2-krao-cave-guide.html">
+          <i class="ic i-dungeon-gate" aria-hidden="true"></i>
+          <h3>Krao Cave</h3>
+          <p>Enhanced Harcon, Neglected Gadioton and Ultimate Berk: the orbs, the stones to hide behind and Berk’s stagger wipe check.</p>
+          <span class="card__meta">3 bosses</span></a></li>
+        <li><a class="card reveal" href="aion-2-draupnir-cave-guide.html">
+          <i class="ic i-spiral-bloom" aria-hidden="true"></i>
+          <h3>Draupnir Cave</h3>
+          <p>Phantasmal Lakshmi, Predator Saraswati and Transcendent Bakarma: reflect, poison orbs, water balls, waves and two wipe checks.</p>
+          <span class="card__meta">3 bosses</span></a></li>
+        <li><a class="card reveal" href="aion-2-fire-temple-guide.html">
+          <i class="ic i-flame" aria-hidden="true"></i>
+          <h3>Fire Temple</h3>
+          <p>Kromede’s Desire: Blazing Judgment*, the fire walls that cross the room, and Ground Fire*.</p>
+          <span class="card__meta">1 boss</span></a></li>
+        <li><a class="card reveal" href="aion-2-urugugu-canyon-guide.html">
+          <i class="ic i-crossed-swords" aria-hidden="true"></i>
+          <h3>Urugugu Canyon</h3>
+          <p>Guardian Captain Raur, Judge Urahum and Divine Auldor: the counter stance, the marks and the snatch.</p>
+          <span class="card__meta">3 bosses</span></a></li>
+        <li><a class="card reveal" href="aion-2-vakron-sky-island-guide.html">
+          <i class="ic i-castle" aria-hidden="true"></i>
+          <h3>Vakron Sky Island</h3>
+          <p>Tiere, Thamon and Vakron: the flower, the stone, red and purple glow, the red floor and the red rock.</p>
+          <span class="card__meta">3 bosses</span></a></li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="chapters" style="margin-top:clamp(48px,6vw,80px)">
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="section" id="cheat-sheet" aria-labelledby="sheet-title">
+    <div class="wrap">
+      <p class="kicker">Cheat sheet</p>
+      <h2 id="sheet-title" class="reveal">The mechanics that wipe groups</h2>
+      <p class="lead reveal">If you read nothing else before a run, read this. The call is what the boss mod says out loud; spell names with a * are our own.</p>
+      <table class="sheet reveal">
+        <thead><tr><th scope="col">Boss</th><th scope="col">What happens</th><th scope="col">What to do</th><th scope="col">Call</th></tr></thead>
+        <tbody>
+          <tr><td><a href="aion-2-krao-cave-guide.html#berk">Ultimate Berk</a></td><td data-h="What happens">Stones*: three stones appear, then Wave of Fury* hits the whole room</td><td data-h="What to do">Stand behind a stone until the wave has hit</td><td data-h="Call"><span class="say">Take cover!</span></td></tr>
+          <tr><td><a href="aion-2-krao-cave-guide.html#berk">Ultimate Berk</a> <span class="tag tag--hard">Conquest</span></td><td data-h="What happens">Near half HP a new stagger gauge appears; if it holds, Extinction for Eternity* kills the group</td><td data-h="What to do">Break it with stagger skills in time</td><td data-h="Call"><span class="say">Break the gauge with stagger skills!</span></td></tr>
+          <tr><td><a href="aion-2-draupnir-cave-guide.html#bakarma">Transcendent Bakarma</a></td><td data-h="What happens">Wave of Death: Call*: a stagger gauge appears; if it holds, Wave of Death* kills the group</td><td data-h="What to do">Everyone uses stagger skills at once</td><td data-h="Call"><span class="say">Break the gauge with stagger skills!</span></td></tr>
+          <tr><td><a href="aion-2-draupnir-cave-guide.html#lakshmi">Phantasmal Lakshmi</a></td><td data-h="What happens">Reflect*: she sends the group’s damage back</td><td data-h="What to do">Stop attacking until it ends</td><td data-h="Call"><span class="say">Stop attacking</span></td></tr>
+          <tr><td><a href="aion-2-draupnir-cave-guide.html#saraswati">Predator Saraswati</a></td><td data-h="What happens">Orb Summon*: orbs you can’t kill pulse on the floor</td><td data-h="What to do">Pull the fight away from the orbs</td><td data-h="Call"><span class="say">Move Away!</span></td></tr>
+          <tr><td><a href="aion-2-fire-temple-guide.html#kromede">Kromede’s Desire</a></td><td data-h="What happens">Blazing Judgment*: fire walls keep rising across the room</td><td data-h="What to do">Stand where no wall is rising</td><td data-h="Call"><span class="say">Fire walls!</span></td></tr>
+          <tr><td><a href="aion-2-urugugu-canyon-guide.html#raur">Guardian Captain Raur</a></td><td data-h="What happens">Counter stance: every hit is answered, harder each time</td><td data-h="What to do">Stop hitting him and step away</td><td data-h="Call"><span class="say">Stop DPS, run away from boss!</span></td></tr>
+          <tr><td><a href="aion-2-urugugu-canyon-guide.html#auldor">Divine Auldor</a> <span class="tag tag--hard">Conquest</span></td><td data-h="What happens">Summon Whirlwind*: a player is marked, then Storm Strike* explodes on them</td><td data-h="What to do">Stack on the marked player to share the hit</td><td data-h="Call"><span class="say">Kael marked, move to Kael!</span></td></tr>
+          <tr><td><a href="aion-2-vakron-sky-island-guide.html#thamon">Thamon</a></td><td data-h="What happens">Red or purple glow: the wrong hits heal him</td><td data-h="What to do">Red: melee stops. Purple: casters stop</td><td data-h="Call"><span class="say">Red, melee stop!</span></td></tr>
+          <tr><td><a href="aion-2-vakron-sky-island-guide.html#vakron">Vakron</a></td><td data-h="What happens">The red rock pulls everyone in, then a heavy hit lands</td><td data-h="What to do">Get out of the circle before it lands</td><td data-h="Call"><span class="say">Get out!</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-        <article class="chapter chapter--wide reveal">
-          <div class="chapter__text">
-            <span class="chapter__num">I · In the fight</span>
-            <h3>Read the boss before it reads you</h3>
-            <ul class="feat">
-              <li><i class="ic i-histogram" aria-hidden="true"></i><div><b>DPS &amp; healing meter</b><span>Damage, rDPS, healing, taken, skills and utility for the whole group, your own row in gold. Rates with two decimals, so 9.33k and 9.41k are not the same number.</span></div></li>
-              <li><i class="ic i-dragon-head" aria-hidden="true"></i><div><b>Boss HP and cast bars</b><span>HP with a trailing damage chunk, the stagger gauge, every cast as it happens — interruptible ones marked — and a kill projection that tells you whether you beat the enrage.</span></div></li>
-              <li><i class="ic i-alarm-clock" aria-hidden="true"></i><div><b>Spoken boss-mechanic warnings, boss by boss</b><span>“Stop DPS soon!”, “Kael marked, move to Kael!”, “Kill the flag!”, “Avoid!” — written for each boss from real pulls, on screen and out loud, ahead of time where the boss gives it away (a cast, a debuff, a boss HP). You choose which and when.</span></div></li>
-              <li><i class="ic i-trophy" aria-hidden="true"></i><div><b>Fight summary &amp; history</b><span>Kill or wipe, time vs your best, top damage and healing, deaths with the last hits that caused them — and who resurrected whom.</span></div></li>
-              <li><i class="ic i-dungeon-gate" aria-hidden="true"></i><div><b>Dungeon &amp; Events</b><span>Switch from one pull to the whole dungeon run, world boss or field event, through respawns and group changes. Cleared runs keep your records — best DPS, best HPS and fastest clear — and your row shows how you’re doing against them.</span></div></li>
-              <li><i class="ic i-portal" aria-hidden="true"></i><div><b>Meter overlay in the game</b><span>Just the meter, in a small see-through window on top of the game. Clicks go straight through to the game; Ctrl+Shift+1–8 switch tabs. Needs Borderless or Windowed mode.</span></div></li>
-              <li><i class="ic i-scroll-unfurled" aria-hidden="true"></i><div><b>Copy to chat</b><span>One tap copies the list you’re looking at — damage, healing, taken or skills — as plain text, ready to paste into party chat or Discord.</span></div></li>
-            </ul>
-          </div>
-          <figure class="shot">
-            <div class="shot__device">
-              <div class="motion only-elyos" data-motion>
-          <video class="motion__v" width="1690" height="697" muted loop playsinline preload="none" poster="assets/img/detail-encounter-elyos.webp"
-                 aria-label="Close-up of the AION 2 boss encounter and DPS meter, moving: Enraged Reda at 70 percent, an interrupt warning and the Berk Slam cast bar filling, then ‘Cleanse Kael!’, the kill projection and best time, the groggy gauge draining, four upcoming boss skills, and the damage meter ranking five players with your row at plus 16 percent versus your best. Demo data.">
-            <source data-src="assets/video/encounter-elyos.webm" type="video/webm">
-            <source data-src="assets/video/encounter-elyos.mp4" type="video/mp4">
-          </video>
-          <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
-        </div>
-              <div class="motion only-asmodian" data-motion>
-          <video class="motion__v" width="1690" height="697" muted loop playsinline preload="none" poster="assets/img/detail-encounter-asmodian.webp"
-                 aria-label="Close-up of the Encounter in the Asmodian look, moving: boss HP, warning line, kill projection, cast bar and the damage meter. Demo data.">
-            <source data-src="assets/video/encounter-asmodian.webm" type="video/webm">
-            <source data-src="assets/video/encounter-asmodian.mp4" type="video/mp4">
-          </video>
-          <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
-        </div>
-            </div>
-            <figcaption>The Encounter — one view, no modes to fiddle with mid-pull.</figcaption>
-          </figure>
-        </article>
-
-        <article class="chapter chapter--flip reveal">
-          <div class="chapter__text">
-            <span class="chapter__num">II · Your group</span>
-            <h3>Who needs you, and what’s about to run out</h3>
-            <ul class="feat">
-              <li><i class="ic i-three-friends" aria-hidden="true"></i><div><b>Party</b><span>HP and mana for everyone, low-HP and death alerts that stay until you tap them, people asking to join.</span></div></li>
-              <li><i class="ic i-hourglass" aria-hidden="true"></i><div><b>Buff timers</b><span>Buffs, debuffs and cooldowns, shortest first; the last five seconds blink.</span></div></li>
-              <li><i class="ic i-a2-class-cleric" aria-hidden="true"></i><div><b>Combat Stats</b><span>Your character’s stat block and deity points — only what the game actually sends.</span></div></li>
-            </ul>
-          </div>
-          <figure class="shot shot--tilt">
-            <div class="shot__device">
-              <div class="motion only-elyos" data-motion>
-          <video class="motion__v" width="847" height="697" muted loop playsinline preload="none" poster="assets/img/detail-group-elyos.webp"
-                 aria-label="The Cleric card with CP, item level and buff timers counting down, above the Party card: an ‘Orin below 30%’ alert, a player asking to join, a dead party member and HP bars rising and falling. Demo data.">
-            <source data-src="assets/video/group-elyos.webm" type="video/webm">
-            <source data-src="assets/video/group-elyos.mp4" type="video/mp4">
-          </video>
-          <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
-        </div>
-              <div class="motion only-asmodian" data-motion>
-          <video class="motion__v" width="847" height="697" muted loop playsinline preload="none" poster="assets/img/detail-group-asmodian.webp"
-                 aria-label="The Cleric and Party cards in the Asmodian look, moving. Demo data.">
-            <source data-src="assets/video/group-asmodian.webm" type="video/webm">
-            <source data-src="assets/video/group-asmodian.mp4" type="video/mp4">
-          </video>
-          <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
-        </div>
-            </div>
-            <figcaption>Character and Party, side by side on page 1.</figcaption>
-          </figure>
-        </article>
-
-        <article class="chapter chapter--wide reveal">
-          <div class="chapter__text">
-            <span class="chapter__num">III · Between fights</span>
-            <h3>Progress that keeps itself</h3>
-            <ul class="feat">
-              <li><i class="ic i-two-coins" aria-hidden="true"></i><div><b>Kinah per hour</b><span>Earned, spent and net for the session, with a sparkline.</span></div></li>
-              <li><i class="ic i-anvil" aria-hidden="true"></i><div><b>Crafting</b><span>Levels, recipes and materials as you work.</span></div></li>
-              <li><i class="ic i-scroll-unfurled" aria-hidden="true"></i><div><b>Homework</b><span>Daily and weekly tasks per character, Od energy and tickets — cleared by itself at the reset.</span></div></li>
-              <li><i class="ic i-world" aria-hidden="true"></i><div><b>World timers</b><span>Shugo Festival, invasions, rifts and sieges in server time and your local time, for your server region.</span></div></li>
-              <li><i class="ic i-alarm-clock" aria-hidden="true"></i><div><b>Reminders, out loud</b><span>“Od energy is full”, the daily reset, Shugo, rifts, Arena — read aloud if you want, never in the middle of a fight. Off until you switch them on.</span></div></li>
-            </ul>
-          </div>
-          <figure class="shot">
-            <div class="shot__device">
-              <a class="zoom only-elyos" href="assets/img/detail-progress-elyos.webp" title="Open full size"><img src="assets/img/detail-progress-elyos.webp" width="1280" height="352" loading="lazy" alt="AION 2 homework tracker with daily tasks and Od energy, World timers counting down to Shugo Festival and Dimensional Invasion, and Kinah and Crafting showing plus 2.9 million for the session. Demo data."></a>
-              <a class="zoom only-asmodian" href="assets/img/detail-progress-asmodian.webp" title="Open full size"><img src="assets/img/detail-progress-asmodian.webp" width="1280" height="352" loading="lazy" alt="Homework, World timers and Kinah in the Asmodian look. Demo data."></a>
-            </div>
-            <figcaption>Homework, World and Kinah &amp; Crafting from page 2.</figcaption>
-          </figure>
-        </article>
-
-        <article class="chapter chapter--flip reveal">
-          <div class="chapter__text">
-            <span class="chapter__num">IV · Getting better</span>
-            <h3>Train, compare, see what changed</h3>
-            <ul class="feat">
-              <li><i class="ic i-hourglass" aria-hidden="true"></i><div><b>Training on the dummy</b><span>Hit a Punching Bag or a Training Scarecrow and the target card becomes a training card: pick 30 s to 5 minutes, the clock starts on your first hit, and you see your DPS against your last run and your best — at the same second.</span></div></li>
-              <li><i class="ic i-scroll-unfurled" aria-hidden="true"></i><div><b>Every run kept with your setup</b><span>Rotation, combat power, item level, stats, buffs and gear are saved with each run. Pause and hit again for the next one; the last 100 runs per character stay.</span></div></li>
-              <li><i class="ic i-anvil" aria-hidden="true"></i><div><b>Which piece changed</b><span>Put two runs side by side: the rows that differ are marked, down to the gear slot you swapped or upgraded.</span></div></li>
-              <li><i class="ic i-histogram" aria-hidden="true"></i><div><b>Analysis page</b><span>In the browser: DPS over the fight with its axes, your rotation per skill with the gaps where a skill was ready and unused, two fights skill by skill, and what stopped you and for how long.</span></div></li>
-            </ul>
-          </div>
-          <figure class="shot shot--tilt">
-            <div class="shot__device">
-              <a class="zoom only-elyos" href="assets/img/analysis-training-elyos.webp" title="Open full size"><img src="assets/img/analysis-training-elyos.webp" loading="lazy" alt="The Analysis page comparing two training runs on the dummy: DPS over the run for run A and run B, combat power, item level, stats, buffs and the gear slot that changed marked, then the rotation of each skill for both runs. Demo data."></a>
-              <a class="zoom only-asmodian" href="assets/img/analysis-training-asmodian.webp" title="Open full size"><img src="assets/img/analysis-training-asmodian.webp" loading="lazy" alt="Two training runs compared on the Analysis page, in the Asmodian look. Demo data."></a>
-            </div>
-            <figcaption>Two training runs side by side on the Analysis page.</figcaption>
-          </figure>
-        </article>
-
+  <!-- ============ MECHANIC TYPES ============ -->
+  <section class="section" id="types" aria-labelledby="types-title">
+    <div class="wrap">
+      <p class="kicker">How AION 2 bosses work</p>
+      <h2 id="types-title" class="reveal">The eight kinds of boss mechanics</h2>
+      <p class="lead reveal">Almost every mechanic in an AION 2 dungeon is one of these. Learn the kind and a new boss is half learned.</p>
+      <div class="kinds reveal">
+        <div><i class="ic i-explosion-rays" aria-hidden="true"></i><div><h3>Zones and orbs</h3><p>The boss puts something on the floor — orbs, circles, waves, fire — that pulses for a while. Step out and wait until it is gone.</p></div></div>
+        <div><i class="ic i-shield" aria-hidden="true"></i><div><h3>Take cover</h3><p>A room-wide hit with a safe spot: a stone, a pillar, the edge of a circle. The boss sets it up first, so there is time to get there.</p></div></div>
+        <div><i class="ic i-broken-shield" aria-hidden="true"></i><div><h3>Wipe checks</h3><p>A gauge appears on the boss. Break it with stagger skills before the time runs out, or the whole group dies. Save your stagger skills for it.</p></div></div>
+        <div><i class="ic i-knockout" aria-hidden="true"></i><div><h3>Stagger and interrupts</h3><p>The stagger (groggy) gauge drains with control skills; a broken gauge stops the cast. Interruptible casts are the ones to stop on purpose.</p></div></div>
+        <div><i class="ic i-padlock" aria-hidden="true"></i><div><h3>Reflect and counter stance</h3><p>For a while, hitting the boss hurts you or heals him. Stop attacking — or only the wrong half of the group stops, as on Thamon.</p></div></div>
+        <div><i class="ic i-minions" aria-hidden="true"></i><div><h3>Adds</h3><p>A flower, a flag, a stone, a handmaiden. They usually die in a few hits and hurt a lot if left alone. Kill them first.</p></div></div>
+        <div><i class="ic i-three-friends" aria-hidden="true"></i><div><h3>Marks and targets</h3><p>One player is picked. Either they run out of the group, or the group stacks on them to share the hit. The mark tells you which.</p></div></div>
+        <div><i class="ic i-enrage" aria-hidden="true"></i><div><h3>Enrage timer</h3><p>Dungeon bosses enrage if the fight runs too long. Watch the kill projection: if the kill comes after the enrage, burst now.</p></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ HOW IT WORKS ============ -->
-  <section class="section" id="how" aria-labelledby="how-title">
+  <!-- ============ THE BOSS MOD ============ -->
+  <section class="section" id="mod" aria-labelledby="mod-title">
     <div class="wrap">
-      <h2 id="how-title" class="kicker">How it works</h2>
-      <p class="lead reveal">A small app in your Windows tray reads the data the game server already sends to your PC, and draws it. That’s the whole trick.</p>
-
-      <ol class="flow reveal" aria-label="Where the data goes">
-        <li><span class="flow__node"><i class="ic i-castle" aria-hidden="true"></i></span><b>Game server</b><span>Sends your client the fight, party and world data, as always.</span></li>
-        <li><span class="flow__node"><i class="ic i-processor" aria-hidden="true"></i></span><b>Your PC</b><span>Npcap lets the app <strong>receive</strong> a copy. Nothing is sent, injected or read from memory.</span></li>
-        <li><span class="flow__node"><i class="ic i-padlock" aria-hidden="true"></i></span><b>127.0.0.1</b><span>The app talks only to your own dashboard, locked with a token only your Windows user can read.</span></li>
-        <li class="flow--stop"><span class="flow__node"><i class="ic i-portal" aria-hidden="true"></i></span><b>Browser, Edge or overlay</b><span>On any browser, as Widgets in iCUE, or as a meter on top of the game</span></li>
-      </ol>
-
-      <div class="tenets reveal">
-        <div class="tenet">
-          <h3><i class="ic ic--gold i-shield" aria-hidden="true"></i>Passive</h3>
-          <p>Receive-only. It never sends anything to the game and never touches game files or memory.</p>
+      <div class="split">
+        <div class="prose">
+          <p class="kicker">The AION 2 boss mod</p>
+          <h2 id="mod-title" class="reveal">Hear the mechanic before you see it</h2>
+          <p class="reveal">A2Naki Companion reads the boss casts the game already sends to your PC and says the call out loud — <span class="say">Take cover!</span>, <span class="say">Dodge!</span>, <span class="say">Stop attacking</span> — with the same line on the boss card and a countdown to when it lands. Where the boss gives it away early (a cast, a debuff, an HP mark), the warning comes early too.</p>
+          <ul class="reveal">
+            <li><strong>Written per boss</strong> from our own recorded pulls, Exploration and Conquest.</li>
+            <li><strong>Learns unknown bosses</strong>: group hits, adds, cleanses and interrupts are found in the fight itself.</li>
+            <li><strong>You choose</strong> which warnings, how early, how loud.</li>
+          </ul>
+          <p class="reveal"><a class="btn" href="aion-2-boss-mod.html">How the boss mod works</a></p>
         </div>
-        <div class="tenet">
-          <h3><i class="ic ic--gold i-spell-book" aria-hidden="true"></i>Read-only</h3>
-          <p>It shows what the game tells your PC — no automation, no macros; it never plays for you.</p>
-        </div>
-        <div class="tenet">
-          <h3><i class="ic ic--gold i-envelope" aria-hidden="true"></i>Stays on your PC</h3>
-          <p>No account, no telemetry. Nothing leaves your PC except what <em>you</em> choose to send — like a bug report you upload yourself.</p>
-        </div>
+        <figure class="shot shot--tilt reveal">
+          <div class="shot__device">
+            <a class="zoom only-elyos" href="assets/img/detail-encounter-elyos.webp" title="Open full size"><img src="assets/img/detail-encounter-elyos.webp" width="1690" height="697" loading="lazy" alt="The Encounter card in a boss fight: boss HP, the warning line ‘Interrupt Berk Slam soon’, the cast bar and the kill projection. Demo data."></a>
+            <a class="zoom only-asmodian" href="assets/img/detail-encounter-asmodian.webp" title="Open full size"><img src="assets/img/detail-encounter-asmodian.webp" width="1690" height="697" loading="lazy" alt="The Encounter card in the Asmodian look. Demo data."></a>
+          </div>
+          <figcaption>The warning line sits right under the boss HP.</figcaption>
+        </figure>
       </div>
-      <p class="dim reveal" style="margin-top:28px;font-size:var(--s-fs-small);max-width:70ch">Still: NCSOFT may see reading game traffic as against the AION 2 terms of service, which is a risk to your account. Read <a href="faq.html#safe">Is it safe?</a> before you decide.</p>
     </div>
   </section>
 
-  <!-- ============ SCREENSHOTS ============ -->
-  <section class="section" id="screens" aria-labelledby="screens-title">
+  <!-- ============ MORE ============ -->
+  <section class="section" id="more" aria-labelledby="more-title">
     <div class="wrap">
-      <p class="kicker">Screenshots</p>
-      <h2 id="screens-title" class="reveal">No Edge? Any screen will do.</h2>
-      <p class="lead reveal">The browser page puts pages 1 and 2 together and fits any window — a second monitor, a laptop, or a tablet propped next to the keyboard.</p>
-      <p class="lead reveal"><strong>It’s modular: you decide which windows you have open.</strong> Encounter, Party, Homework, World, Kinah and the others are separate widgets — keep only the ones you want, where you want them, from one meter on top of the game to the whole dashboard.</p>
-      <div class="gallery gallery__pair" style="margin-top:40px">
-        <figure class="shot reveal">
-          <div class="shot__device">
-              <a class="zoom only-elyos" href="assets/img/browser-elyos.webp" title="Open full size"><img src="assets/img/browser-elyos.webp" width="1280" height="800" loading="lazy" alt="The AION 2 DPS meter and dashboard in a browser at 1280 by 800, Elyos look: Encounter, Cleric, Party, Homework, World, Kinah and Crafting, and Status in a three-column grid. Demo data."></a>
-            <a class="zoom only-asmodian" href="assets/img/browser-asmodian.webp" title="Open full size"><img src="assets/img/browser-asmodian.webp" width="1280" height="800" loading="lazy" alt="The AION 2 dashboard in a browser at 1280 by 800, Asmodian look, seven cards in a three-column grid. Demo data."></a>
-            </div>
-          <figcaption><span class="chip">Demo data</span>&nbsp; The browser page in a 1280 × 800 window. Names and numbers are made up.</figcaption>
-        </figure>
-        <figure class="shot reveal">
-          <div class="shot__device">
-            <a class="zoom only-elyos" href="assets/img/overlay-elyos.webp" title="Open full size"><img src="assets/img/overlay-elyos.webp" width="600" height="400" loading="lazy" alt="The AION 2 DPS meter overlay, Elyos look: Damage, rDPS, Healing, Taken, Skills, Utility and History tabs above five players ranked by DPS, your own row marked plus 16 percent versus your best. Demo data."></a>
-            <a class="zoom only-asmodian" href="assets/img/overlay-asmodian.webp" title="Open full size"><img src="assets/img/overlay-asmodian.webp" width="600" height="400" loading="lazy" alt="The AION 2 DPS meter overlay in the Asmodian look. Demo data."></a>
-          </div>
-          <figcaption><span class="chip">Demo data</span>&nbsp; Just the meter, in a see-through window on top of the game.</figcaption>
-        </figure>
+      <p class="kicker">Also in A2Naki</p>
+      <h2 id="more-title" class="reveal">Everything else on one screen</h2>
+      <ul class="cards">
+        <li><a class="card reveal" href="aion-2-dps-meter.html">
+          <i class="ic i-histogram" aria-hidden="true"></i>
+          <h3>AION 2 DPS meter</h3>
+          <p>Damage, rDPS, healing and skills for the whole party, as an overlay on the game or in a browser.</p></a></li>
+        <li><a class="card reveal" href="aion-2-build-min-max.html">
+          <i class="ic i-anvil" aria-hidden="true"></i>
+          <h3>Build &amp; min-max</h3>
+          <p>Test a build on the training dummy and see which gear slot or skill change moved your DPS.</p></a></li>
+        <li><a class="card reveal" href="aion-2-timers.html">
+          <i class="ic i-hourglass" aria-hidden="true"></i>
+          <h3>AION 2 timers</h3>
+          <p>Live countdowns to Shugo Festival, Dimensional Invasion, Spacetime Rift, Arena and the resets.</p></a></li>
+        <li><a class="card reveal" href="aion-2-xeneon-edge.html">
+          <i class="ic i-portal" aria-hidden="true"></i>
+          <h3>AION 2 on a Xeneon Edge</h3>
+          <p>The whole dashboard on Corsair’s 2560 × 720 touchscreen, imported into iCUE in one click.</p></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="questions" aria-labelledby="q-title">
+    <div class="wrap wrap--narrow">
+      <p class="kicker">Questions</p>
+      <h2 id="q-title" class="reveal">Boss mechanics, briefly</h2>
+      <div class="faq">
+        <details>
+          <summary><i class="ic i-dragon-head" aria-hidden="true"></i>What are the boss mechanics in AION 2?</summary>
+          <div class="faq__a"><p>Dungeon bosses mix the eight kinds above: zones and orbs to step out of, group hits you hide from, wipe checks where the party must break the boss’s stagger gauge in time, reflect or counter stances, adds, marked or targeted players, and an enrage timer.</p></div>
+        </details>
+        <details>
+          <summary><i class="ic i-alarm-clock" aria-hidden="true"></i>Is there a boss mod for AION 2?</summary>
+          <div class="faq__a"><p>Yes — A2Naki Companion. It reads the boss casts the game already sends to your PC and says short warnings out loud, ahead of time where it can. It never sends anything to the game. See <a href="aion-2-boss-mod.html">the boss mod page</a>, and read <a href="faq.html#safe">Is it safe?</a> before you decide.</p></div>
+        </details>
+        <details>
+          <summary><i class="ic i-scroll-unfurled" aria-hidden="true"></i>Where do these mechanics come from?</summary>
+          <div class="faq__a"><p>From our own recordings of real pulls on the Global servers: which cast starts a mechanic, what it does and who it hits. Where something is not confirmed yet, the page says so. The game doesn’t show English names for most boss spells, so we name them ourselves — after what they do, or translated from the Korean client; every name with a * is one of ours.</p></div>
+        </details>
       </div>
     </div>
   </section>
@@ -276,8 +254,8 @@
         <span class="cta__halo" aria-hidden="true"></span>
         <div>
           <p class="kicker">Beta · on Discord</p>
-          <h2 id="cta-title">Help us shape it</h2>
-          <p>We’re looking for English-speaking players who play AION 2 differently from each other — healers, tanks, crafters, Kinah farmers, alt collectors and dungeon runners — with or without a Xeneon Edge. The beta runs on our Discord: join, download it there and tell us what you find.</p>
+          <h2 id="cta-title">A boss we haven’t covered?</h2>
+          <p>Join the beta, record a pull and tell us what the boss did. The next version knows it — and so does this guide.</p>
         </div>
         <div class="cta__act">
           <a class="btn btn--primary" href="https://discord.gg/mVgms6PWHt" rel="noopener" target="_blank">Join the A2Naki Discord</a>
@@ -295,15 +273,22 @@
       <div>
         <p><strong>A2Naki Companion</strong> — free, no account, no telemetry.</p>
         <p>Made by players, for players.</p>
+        <p>Dungeon boss guides: <a href="aion-2-krao-cave-guide.html">Krao Cave</a> · <a href="aion-2-draupnir-cave-guide.html">Draupnir Cave</a> · <a href="aion-2-fire-temple-guide.html">Fire Temple</a> · <a href="aion-2-urugugu-canyon-guide.html">Urugugu Canyon</a> · <a href="aion-2-vakron-sky-island-guide.html">Vakron Sky Island</a></p>
       </div>
       <nav aria-label="Footer">
-        <a href="beta.html">Beta</a>
+        <a href="index.html" aria-current="page">Boss mechanics</a>
+        <a href="aion-2-boss-mod.html">Boss mod</a>
+        <a href="aion-2-dps-meter.html">DPS meter</a>
+        <a href="aion-2-build-min-max.html">Build &amp; min-max</a>
+        <a href="aion-2-timers.html">Timers</a>
+        <a href="aion-2-xeneon-edge.html">Xeneon Edge</a>
         <a href="faq.html">FAQ</a>
+        <a href="beta.html">Beta</a>
         <a href="privacy.html">Privacy</a>
       </nav>
     </div>
     <div class="legal">
-      <p>AION 2 is a trademark of NCSOFT Corporation. A2Naki Companion is an independent fan project, not affiliated with or endorsed by NCSOFT or Corsair.</p>
+      <p>AION 2 is a trademark of NCSOFT Corporation. Corsair, iCUE and Xeneon are trademarks of Corsair. A2Naki Companion is an independent fan project, not affiliated with or endorsed by NCSOFT or Corsair.</p>
       <p>Icons from <a href="https://game-icons.net">game-icons.net</a> by Lorc, Delapouite and contributors, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>; class icons drawn for A2Naki. Fonts: <a href="assets/fonts/OFL-cinzel.txt">Cinzel</a> and <a href="assets/fonts/OFL-jost.txt">Jost</a>, SIL Open Font License 1.1. Screenshots and clips show demo data only.</p>
     </div>
   </div>
