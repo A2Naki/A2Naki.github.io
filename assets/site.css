@@ -190,7 +190,7 @@ h3 { font-size: var(--s-fs-h3); letter-spacing: .06em; margin-bottom: .5em; }
 .brand__name { font-family: var(--a2-font-title); font-weight: 600; font-size: 1.125rem; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
 .brand__name small { display: block; font-family: var(--a2-font-ui); font-weight: 400; font-size: .6875rem; letter-spacing: .32em; color: var(--a2-dim); margin-top: 1px; }
 .nav { display: flex; align-items: center; gap: 4px; }
-.nav a { position: relative; display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; font-size: .9375rem; letter-spacing: .06em; color: var(--a2-dim); text-decoration: none; }
+.nav a { position: relative; display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; font-size: .9375rem; letter-spacing: .06em; color: var(--a2-dim); text-decoration: none; white-space: nowrap; }
 .nav a:hover { color: var(--a2-text); }
 .nav a[aria-current="page"] { color: var(--a2-text); }
 .nav a[aria-current="page"]::after { content: ""; position: absolute; left: 14px; right: 14px; bottom: 6px; height: 1px; background: var(--a2-gold); }
@@ -507,6 +507,13 @@ h3 { font-size: var(--s-fs-h3); letter-spacing: .06em; margin-bottom: .5em; }
 @media (max-width: 720px) { .community { order: 2; } }
 @media (max-width: 480px) { .brand__name { display: none; } }
 @media (max-width: 400px) { .community__long { display: none; } .community__btn { padding: 0 10px; letter-spacing: .08em; } }
+/* six menu links (Pets, 2026-10-09): the menu takes its own row below 1020 px, never over the brand or the Discord button */
+@media (max-width: 1020px) {
+  .site-head__in { flex-wrap: wrap; gap: 0 8px; min-height: 0; padding-top: 8px; }
+  .nav { order: 3; justify-content: space-between; margin: 0 -10px; width: calc(100% + 20px); }
+  .community { order: 2; }
+}
+@media (max-width: 400px) { .nav a { padding: 0 5px; letter-spacing: 0; } }
 
 /* Breadcrumb */
 .crumbs { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 0 0 18px; padding: 0; list-style: none; font-size: var(--s-fs-small); color: var(--a2-dim); }
