@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AION 2 DPS Meter: free live meter, rDPS &amp; overlay | A2Naki</title>
-<meta name="description" content="Free AION 2 DPS meter for Windows: live damage, rDPS, healing and per-skill numbers for the whole party, an in-game overlay, fight history and training on the dummy: in a browser or on a Xeneon Edge.">
+<meta name="description" content="Free AION 2 DPS meter for Windows: live party damage, rDPS, healing and skills, an in-game overlay, fight history and training runs on the dummy.">
 <link rel="canonical" href="https://a2naki.github.io/aion-2-dps-meter.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="A2Naki Companion">
@@ -39,7 +39,7 @@
     </a>
     <div class="community">
       <span class="community__txt">AION 2 Global Discord, the biggest AION 2 community, supports A2Naki</span>
-      <a class="community__btn" href="https://discord.gg/aion2global" rel="noopener" target="_blank"><span class="community__long">AION 2&nbsp;</span>Global Discord</a>
+      <a class="community__btn" href="https://discord.gg/aion2global" rel="noopener" target="_blank"><span class="community__long">AION 2&nbsp;</span>Global Discord<span class="sr-only"> (opens in a new tab)</span></a>
     </div>
     <nav class="nav" aria-label="Main">
       <a href="index.html">Bosses</a>
@@ -74,7 +74,7 @@
         <!-- Moving demos (8 s loops, demo data): WebM VP9 + MP4 H.264, the still screenshot as poster. site.js loads a clip only
              when it is on screen and in the current faction look, never autoplays with prefers-reduced-motion (play button). -->
         <div class="motion only-elyos" data-motion>
-          <video class="motion__v" width="2537" height="697" muted loop playsinline preload="none" poster="assets/img/edge-elyos.webp"
+          <video class="motion__v" aria-hidden="true" width="2537" height="697" muted loop playsinline preload="none" poster="assets/img/edge-elyos.webp"
                  aria-label="The AION 2 dashboard on a Corsair Xeneon Edge, page 1, Elyos look, moving: the Encounter with Enraged Reda at 70 percent HP, an ‘Interrupt Berk Slam soon’ warning, the cast bar filling, then ‘Cleanse Kael!’, the kill projection against your best, the damage meter with rDPS, the Cleric buff timers and the Party card with a low-HP alert. Demo data.">
             <source data-src="assets/video/hero-elyos.webm" type="video/webm">
             <source data-src="assets/video/hero-elyos.mp4" type="video/mp4">
@@ -82,7 +82,7 @@
           <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
         </div>
         <div class="motion only-asmodian" data-motion>
-          <video class="motion__v" width="2537" height="697" muted loop playsinline preload="none" poster="assets/img/edge-asmodian.webp"
+          <video class="motion__v" aria-hidden="true" width="2537" height="697" muted loop playsinline preload="none" poster="assets/img/edge-asmodian.webp"
                  aria-label="The same page 1 in the Asmodian look, moving: Encounter with warnings and a filling cast bar, damage meter, Cleric buff timers and Party. Demo data.">
             <source data-src="assets/video/hero-asmodian.webm" type="video/webm">
             <source data-src="assets/video/hero-asmodian.mp4" type="video/mp4">
@@ -120,7 +120,7 @@
           <figure class="shot">
             <div class="shot__device">
               <div class="motion only-elyos" data-motion>
-          <video class="motion__v" width="1690" height="697" muted loop playsinline preload="none" poster="assets/img/detail-encounter-elyos.webp"
+          <video class="motion__v" aria-hidden="true" width="1690" height="697" muted loop playsinline preload="none" poster="assets/img/detail-encounter-elyos.webp"
                  aria-label="Close-up of the AION 2 boss encounter and DPS meter, moving: Enraged Reda at 70 percent, an interrupt warning and the Berk Slam cast bar filling, then ‘Cleanse Kael!’, the kill projection and best time, the groggy gauge draining, four upcoming boss skills, and the damage meter ranking five players with your row at plus 16 percent versus your best. Demo data.">
             <source data-src="assets/video/encounter-elyos.webm" type="video/webm">
             <source data-src="assets/video/encounter-elyos.mp4" type="video/mp4">
@@ -128,7 +128,7 @@
           <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
         </div>
               <div class="motion only-asmodian" data-motion>
-          <video class="motion__v" width="1690" height="697" muted loop playsinline preload="none" poster="assets/img/detail-encounter-asmodian.webp"
+          <video class="motion__v" aria-hidden="true" width="1690" height="697" muted loop playsinline preload="none" poster="assets/img/detail-encounter-asmodian.webp"
                  aria-label="Close-up of the Encounter in the Asmodian look, moving: boss HP, warning line, kill projection, cast bar and the damage meter. Demo data.">
             <source data-src="assets/video/encounter-asmodian.webm" type="video/webm">
             <source data-src="assets/video/encounter-asmodian.mp4" type="video/mp4">
@@ -153,7 +153,7 @@
           <figure class="shot shot--tilt">
             <div class="shot__device">
               <div class="motion only-elyos" data-motion>
-          <video class="motion__v" width="847" height="697" muted loop playsinline preload="none" poster="assets/img/detail-group-elyos.webp"
+          <video class="motion__v" aria-hidden="true" width="847" height="697" muted loop playsinline preload="none" poster="assets/img/detail-group-elyos.webp"
                  aria-label="The Cleric card with CP, item level and buff timers counting down, above the Party card: an ‘Orin below 30%’ alert, a player asking to join, a dead party member and HP bars rising and falling. Demo data.">
             <source data-src="assets/video/group-elyos.webm" type="video/webm">
             <source data-src="assets/video/group-elyos.mp4" type="video/mp4">
@@ -161,7 +161,7 @@
           <button class="motion__btn" type="button" data-motion-btn hidden><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Play</span></button>
         </div>
               <div class="motion only-asmodian" data-motion>
-          <video class="motion__v" width="847" height="697" muted loop playsinline preload="none" poster="assets/img/detail-group-asmodian.webp"
+          <video class="motion__v" aria-hidden="true" width="847" height="697" muted loop playsinline preload="none" poster="assets/img/detail-group-asmodian.webp"
                  aria-label="The Cleric and Party cards in the Asmodian look, moving. Demo data.">
             <source data-src="assets/video/group-asmodian.webm" type="video/webm">
             <source data-src="assets/video/group-asmodian.mp4" type="video/mp4">
@@ -187,8 +187,8 @@
           </div>
           <figure class="shot">
             <div class="shot__device">
-              <a class="zoom only-elyos" href="assets/img/detail-progress-elyos.webp" title="Open full size"><img src="assets/img/detail-progress-elyos.webp" width="1280" height="352" loading="lazy" alt="AION 2 pet tracker with the pets that got souls this session and their levels, World timers counting down to Shugo Festival and Dimensional Invasion, and Kinah and Crafting showing plus 2.9 million for the session. Demo data."></a>
-              <a class="zoom only-asmodian" href="assets/img/detail-progress-asmodian.webp" title="Open full size"><img src="assets/img/detail-progress-asmodian.webp" width="1280" height="352" loading="lazy" alt="Farming with this session&apos;s pets, World timers and Kinah in the Asmodian look. Demo data."></a>
+              <a class="zoom only-elyos" href="assets/img/detail-progress-elyos.webp" title="Open full size"><img src="assets/img/detail-progress-elyos.webp" width="1280" height="352" loading="lazy" alt="AION 2 pet tracker with the pets that got souls this session and their levels, World timers counting down to Shugo Festival and Dimensional Invasion, and Kinah and Crafting showing plus 2.9 million for the session. Demo data."><span class="sr-only">, open full size</span></a>
+              <a class="zoom only-asmodian" href="assets/img/detail-progress-asmodian.webp" title="Open full size"><img src="assets/img/detail-progress-asmodian.webp" width="1280" height="352" loading="lazy" alt="Farming with this session&apos;s pets, World timers and Kinah in the Asmodian look. Demo data."><span class="sr-only">, open full size</span></a>
             </div>
             <figcaption>Farming (on its Pets page), World and Kinah &amp; Crafting from page 2.</figcaption>
           </figure>
@@ -207,8 +207,8 @@
           </div>
           <figure class="shot shot--tilt">
             <div class="shot__device">
-              <a class="zoom only-elyos" href="assets/img/analysis-training-elyos.webp" title="Open full size"><img src="assets/img/analysis-training-elyos.webp" width="1196" height="809" loading="lazy" alt="The Analysis page comparing two training runs on the dummy: DPS over the run for run A and run B, combat power, item level, stats, buffs and the gear slot that changed marked, then the rotation of each skill for both runs. Demo data."></a>
-              <a class="zoom only-asmodian" href="assets/img/analysis-training-asmodian.webp" title="Open full size"><img src="assets/img/analysis-training-asmodian.webp" width="1196" height="809" loading="lazy" alt="Two training runs compared on the Analysis page, in the Asmodian look. Demo data."></a>
+              <a class="zoom only-elyos" href="assets/img/analysis-training-elyos.webp" title="Open full size"><img src="assets/img/analysis-training-elyos.webp" width="1196" height="809" loading="lazy" alt="The Analysis page comparing two training runs on the dummy: DPS over the run for run A and run B, combat power, item level, stats, buffs and the gear slot that changed marked, then the rotation of each skill for both runs. Demo data."><span class="sr-only">, open full size</span></a>
+              <a class="zoom only-asmodian" href="assets/img/analysis-training-asmodian.webp" title="Open full size"><img src="assets/img/analysis-training-asmodian.webp" width="1196" height="809" loading="lazy" alt="Two training runs compared on the Analysis page, in the Asmodian look. Demo data."><span class="sr-only">, open full size</span></a>
             </div>
             <figcaption>Two training runs side by side on the Analysis page.</figcaption>
           </figure>
@@ -280,15 +280,15 @@
       <div class="gallery gallery__pair" style="margin-top:40px">
         <figure class="shot reveal">
           <div class="shot__device">
-              <a class="zoom only-elyos" href="assets/img/browser-elyos.webp" title="Open full size"><img src="assets/img/browser-elyos.webp" width="1280" height="800" loading="lazy" alt="The AION 2 DPS meter and dashboard in a browser at 1280 by 800, Elyos look: Encounter, Cleric, Party, Farming, World, Kinah and Crafting, and Status in a three-column grid. Demo data."></a>
-            <a class="zoom only-asmodian" href="assets/img/browser-asmodian.webp" title="Open full size"><img src="assets/img/browser-asmodian.webp" width="1280" height="800" loading="lazy" alt="The AION 2 dashboard in a browser at 1280 by 800, Asmodian look, seven cards in a three-column grid. Demo data."></a>
+              <a class="zoom only-elyos" href="assets/img/browser-elyos.webp" title="Open full size"><img src="assets/img/browser-elyos.webp" width="1280" height="800" loading="lazy" alt="The AION 2 DPS meter and dashboard in a browser at 1280 by 800, Elyos look: Encounter, Cleric, Party, Farming, World, Kinah and Crafting, and Status in a three-column grid. Demo data."><span class="sr-only">, open full size</span></a>
+            <a class="zoom only-asmodian" href="assets/img/browser-asmodian.webp" title="Open full size"><img src="assets/img/browser-asmodian.webp" width="1280" height="800" loading="lazy" alt="The AION 2 dashboard in a browser at 1280 by 800, Asmodian look, seven cards in a three-column grid. Demo data."><span class="sr-only">, open full size</span></a>
             </div>
           <figcaption><span class="chip">Demo data</span>&nbsp; The browser page in a 1280 × 800 window. Names and numbers are made up.</figcaption>
         </figure>
         <figure class="shot reveal">
           <div class="shot__device">
-            <a class="zoom only-elyos" href="assets/img/overlay-elyos.webp" title="Open full size"><img src="assets/img/overlay-elyos.webp" width="600" height="400" loading="lazy" alt="The AION 2 DPS meter overlay, Elyos look: Damage, rDPS, Healing, Taken, Skills, Utility and History tabs above five players ranked by DPS, your own row marked plus 16 percent versus your best. Demo data."></a>
-            <a class="zoom only-asmodian" href="assets/img/overlay-asmodian.webp" title="Open full size"><img src="assets/img/overlay-asmodian.webp" width="600" height="400" loading="lazy" alt="The AION 2 DPS meter overlay in the Asmodian look. Demo data."></a>
+            <a class="zoom only-elyos" href="assets/img/overlay-elyos.webp" title="Open full size"><img src="assets/img/overlay-elyos.webp" width="600" height="400" loading="lazy" alt="The AION 2 DPS meter overlay, Elyos look: Damage, rDPS, Healing, Taken, Skills, Utility and History tabs above five players ranked by DPS, your own row marked plus 16 percent versus your best. Demo data."><span class="sr-only">, open full size</span></a>
+            <a class="zoom only-asmodian" href="assets/img/overlay-asmodian.webp" title="Open full size"><img src="assets/img/overlay-asmodian.webp" width="600" height="400" loading="lazy" alt="The AION 2 DPS meter overlay in the Asmodian look. Demo data."><span class="sr-only">, open full size</span></a>
           </div>
           <figcaption><span class="chip">Demo data</span>&nbsp; Just the meter, in a see-through window on top of the game.</figcaption>
         </figure>

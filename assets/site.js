@@ -18,7 +18,7 @@
     var other = theme === "elyos" ? "Asmodian" : "Elyos";
     var btns = document.querySelectorAll("[data-theme-toggle]");
     for (var i = 0; i < btns.length; i++) {
-      btns[i].setAttribute("aria-label", "Switch to the " + other + " look");
+      btns[i].setAttribute("aria-label", "Faction look: " + (theme === "elyos" ? "Elyos" : "Asmodian") + ". Switch to the " + other + " look");
       btns[i].setAttribute("title", "Switch to the " + other + " look");
     }
     return theme;
@@ -89,6 +89,17 @@
     boxes.forEach(function (box) { io.observe(box); });
   }
   document.addEventListener("DOMContentLoaded", motionSetup);
+
+  // A link to a FAQ answer (faq.html#training) opens that answer: only Chrome opens a closed <details> by itself
+  // (a11y review 2026-10-10)
+  function openTarget() {
+    var id = decodeURIComponent((location.hash || "").slice(1));
+    var el = id && document.getElementById(id);
+    var d = el && (el.tagName === "DETAILS" ? el : el.closest && el.closest("details"));
+    if (d && !d.open) d.open = true;
+  }
+  document.addEventListener("DOMContentLoaded", openTarget);
+  window.addEventListener("hashchange", openTarget);
 
   // Scroll reveal — only when motion is welcome and the browser can observe.
   var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
