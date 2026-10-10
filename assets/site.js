@@ -93,7 +93,8 @@
   // A link to a FAQ answer (faq.html#training) opens that answer: only Chrome opens a closed <details> by itself
   // (a11y review 2026-10-10)
   function openTarget() {
-    var id = decodeURIComponent((location.hash || "").slice(1));
+    var raw = (location.hash || "").slice(1), id;
+    try { id = decodeURIComponent(raw); } catch (e) { id = raw; }   // a malformed address (#%E0) is used as it is
     var el = id && document.getElementById(id);
     var d = el && (el.tagName === "DETAILS" ? el : el.closest && el.closest("details"));
     if (d && !d.open) d.open = true;
