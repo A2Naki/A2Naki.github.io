@@ -221,6 +221,9 @@ h3 { font-size: var(--s-fs-h3); letter-spacing: .06em; margin-bottom: .5em; }
 .hero .lead { margin: 28px auto 0; max-width: 40ch; color: var(--a2-dim); }
 .hero__cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 28px; margin: 40px 0 0; }
 .hero__cta--download { margin-top: 18px; }
+/* the beta page's buttons in one column, all as wide as the widest (owner 2026-10-11: the changelog under "Join on Discord") */
+.hero__cta--stack { display: inline-grid; grid-template-columns: minmax(0, 1fr); justify-content: start; gap: 14px; margin-top: 32px; }
+.hero__cta--stack .btn { width: 100%; }
 .hero__note { margin: 18px 0 0; font-size: var(--s-fs-small); color: var(--a2-dim); }
 
 /* The Edge: a long bezel holding the real page-1 screenshot */
