@@ -63,6 +63,18 @@
     <div class="wrap wrap--narrow">
       <article class="boss" id="next">
         <div class="boss__head"><i class="ic i-hourglass" aria-hidden="true"></i><div><h2>Coming in the next version</h2><p>Not in a build yet</p></div></div>
+        <h3 class="log__group">Homework</h3>
+        <ul class="log">
+          <li>Homework comes back in the Farming window, filled in by itself: the app reads your daily and weekly counters from the game (Daily Dungeon and Nightmare entries, Duty Missions and more), so no more tapping. Tasks the game does not tell us about are left out.</li>
+        </ul>
+      </article>
+      <article class="boss" id="v0-2-33">
+        <div class="boss__head"><i class="ic i-scroll-unfurled" aria-hidden="true"></i><div><h2>Version 0.2.33</h2><p>2026-10-11</p></div></div>
+        <h3 class="log__group">Thanks</h3>
+        <ul class="log">
+          <li>Baka, for recordings of Shattered Arkanis (level 3) that the boss calls are built from.</li>
+          <li>Olaaris, for a recording of Fire Temple (Conquest) with all three bosses.</li>
+        </ul>
         <h3 class="log__group">Analysis</h3>
         <ul class="log">
           <li>The numbers on the left of the DPS chart and the training chart are no longer cut off: 14.80k could read as 4.80k.</li>
@@ -73,17 +85,38 @@
         <h3 class="log__group">Encounter</h3>
         <ul class="log">
           <li>PvP mode stays on when an enemy player kills you and you come back on the same map. It ends when you do something else: hit a monster, press Restart training, or go to another map.</li>
+          <li>A fight's length is counted to its last hit everywhere: the Summary, History and the session now show the same time and DPS as the meter. The game reports a death up to 4 seconds after the killing hit, which made short fights look longer and their DPS lower.</li>
+          <li>A fight on a training dummy is always summed up (&quot;Ended&quot;) and kept in History, wherever you train. Before it depended on the monsters standing nearby.</li>
+          <li>A wipe ends the fight: when the whole group is dead, the pull is summed up as a wipe and the next pull is a new fight. Before, the wipe and the kill after it could be one long fight (your old character id from before a zone change still counted as alive).</li>
+          <li>Utility tab: a cast counts as &quot;went through&quot; only when its skill can be interrupted by the same rule the cast bar and the voice use (the boss data, or what the app learned about that boss). Skills of adds and casts cut by a stagger break are no longer counted as interruptible.</li>
+          <li>Utility tab: a debuff counts as a missed cleanse only when it can be cleansed by the same rule the voice uses: the boss data names it, or your group took it off at least twice and at least half of the times it came. A debuff someone took off once no longer makes every later one a &quot;miss&quot;.</li>
+          <li>A training attempt you drop with Restart training is not kept anywhere.</li>
+          <li>A new fight switches the meter back to Fight, also when you were looking at the whole dungeon run.</li>
+          <li>A zone change starts the meter afresh in full: the last fight's casts no longer show on the training card after a zone change, and a skill used just before a teleport no longer counts as the opener of the first fight on the other side.</li>
           <li>A fight opened from History shows in a meter list (never Utility), and the button by the tabs says &quot;‹ History&quot; and takes you back to the list.</li>
           <li>The finished training card says what its numbers mean: &quot;DPS: first 10 s … · rest …&quot;, and the skill line reads &quot;+14.1 % vs last run&quot;.</li>
           <li>The training card says &quot;Buff uptime&quot;, and Restart training and the Analysis button are the same size and look; the Analysis button says &quot;Analysis (new window)&quot;.</li>
+          <li>On a dungeon run, the line above the meter (&quot;… best clear 11:30 · party …&quot;) is no longer cut off by the Copy button: it uses two lines when it needs them.</li>
+        </ul>
+        <h3 class="log__group">Boss calls</h3>
+        <ul class="log">
+          <li>Vakron's red rock (Vakron Sky Island) now says &quot;DPS down red stone!&quot; (it said &quot;Get out away from boss!&quot;).</li>
+          <li>Vakron (Vakron Sky Island, Conquest) says &quot;Move!&quot; for his two ground zones, as on Exploration.</li>
+          <li>Judge Urahum (Urugugu Canyon, Conquest) also says &quot;Dodge!&quot; for a second spell.</li>
+          <li>&quot;Group damage!&quot; is gone: the app no longer says it for skills that hit the whole group. Boss calls are chosen by hand.</li>
         </ul>
         <h3 class="log__group">Party</h3>
         <ul class="log">
           <li>A player who joins your group shows at once: before, the group could read 3/5 for a few minutes while it was full.</li>
         </ul>
-        <h3 class="log__group">Homework</h3>
+        <h3 class="log__group">Stability</h3>
         <ul class="log">
-          <li>Homework comes back in the Farming window, filled in by itself: the app reads your daily and weekly counters from the game (Daily Dungeon and Nightmare entries, Duty Missions and more), so no more tapping. Tasks the game does not tell us about are left out.</li>
+          <li>One window that hits an error no longer stops the others: it shows &quot;This window hit an error&quot; in its own frame, and every other window keeps working.</li>
+          <li>Each widget now carries only the code it shows (the Character widget no longer loads the Encounter's), so the widgets are smaller and one window's problem cannot reach the others. Every packed widget is opened on its own and checked before a version ships.</li>
+        </ul>
+        <h3 class="log__group">Farming</h3>
+        <ul class="log">
+          <li>Pets with the keyboard: opening a pet puts the focus on &quot;‹ Pets&quot;, and going back puts it on that pet's row, so you can go on with Tab. Before, the focus jumped to the start of the page.</li>
         </ul>
       </article>
       <article class="boss" id="v0-2-32">
@@ -158,7 +191,7 @@
         </ul>
         <h3 class="log__group">Boss calls</h3>
         <ul class="log">
-          <li>Judge Urahum (Urugugu Canyon, normal): his big spell now says &quot;Dodge!&quot; (it said &quot;Get out away from boss!&quot;).</li>
+          <li>Judge Urahum (Urugugu Canyon, Conquest): his big spell now says &quot;Dodge!&quot; (it said &quot;Get out away from boss!&quot;).</li>
           <li>A new call, &quot;Slam!&quot;, for heavy hits on the tank, with its own switch under Mechanics. First boss: Guardian Captain Raur (Urugugu Canyon), whose big hit said &quot;Move away from boss!&quot; before.</li>
         </ul>
         <h3 class="log__group">Also</h3>

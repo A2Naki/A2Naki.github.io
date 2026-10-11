@@ -171,10 +171,14 @@
     }).filter(e => Number.isFinite(e.at)).sort((a, b) => a.diff - b.diff);
   }
 
-  /** 1 Hz tick aligned to the second; pauses when hidden */
+  /** 1 Hz tick aligned to the second; pauses when hidden. The next second is booked before fn runs, so a throw in fn
+      no longer stops this clock for good (MODULAR-PLAN 1.1, 2026-10-11). */
   function tick(fn) {
     let id = null;
-    const run = () => { fn(new Date()); id = setTimeout(run, 1000 - (Date.now() % 1000)); };
+    const run = () => {
+      id = setTimeout(run, 1000 - (Date.now() % 1000));
+      try { fn(new Date()); } catch (e) { console.error(e); }
+    };
     const onVis = () => { clearTimeout(id); if (document.visibilityState !== "hidden") run(); };
     document.addEventListener("visibilitychange", onVis); run();
     return () => { clearTimeout(id); document.removeEventListener("visibilitychange", onVis); };
