@@ -517,7 +517,9 @@ h3 { font-size: var(--s-fs-h3); letter-spacing: .06em; margin-bottom: .5em; }
   .nav { order: 3; justify-content: space-between; margin: 0 -10px; width: calc(100% + 20px); }
   .community { order: 2; }
 }
-@media (max-width: 400px) { .nav a { padding: 0 5px; letter-spacing: 0; } }
+/* "Open Beta" in the menu (owner 2026-10-12): all seven links stay on one row down to 360 px (with "Beta" they wrapped below about 370 px); space-between keeps them apart */
+@media (max-width: 560px) { .nav { gap: 0; } .nav a { padding: 0 8px; } .nav a[aria-current="page"]::after { left: 8px; right: 8px; } }
+@media (max-width: 460px) { .nav a { padding: 0 3px; letter-spacing: 0; } .nav a[aria-current="page"]::after { left: 3px; right: 3px; } }
 
 /* Breadcrumb */
 .crumbs { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 0 0 18px; padding: 0; list-style: none; font-size: var(--s-fs-small); color: var(--a2-dim); }
